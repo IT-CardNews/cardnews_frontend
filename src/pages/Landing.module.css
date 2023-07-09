@@ -1,0 +1,40 @@
+.icon {
+  position: absolute;
+  top: 156px;
+  left: 0;
+  width: 375px;
+  height: 375px;
+  object-fit: cover;
+}
+.landingChild {
+  position: absolute;
+  top: 601px;
+  left: 41px;
+  border-radius: var(--br-31xl);
+  width: 304px;
+  height: 50px;
+  cursor: pointer;
+}
+.eatIt {
+  position: absolute;
+  top: 608px;
+  left: 98px;
+  letter-spacing: -0.28px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  height: 28px;
+}
+.landing {
+  position: relative;
+  background: linear-gradient(180deg, #83a4d4, #b6fbff 92.6%);
+  width: 100%;
+  height: 812px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-noto-sans);
+}
