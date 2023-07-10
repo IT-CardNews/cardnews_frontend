@@ -1,5 +1,16 @@
 import styles from "./Interest.module.css";
+import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
+
+
 const Interest = () => {
+  const navigate = useNavigate();
+
+  const onClick = useCallback(() => {
+    navigate("/news");
+  }, [navigate]);
+
+
   return (
     <div className={styles.interest} data-scroll-to="interestContainer">
       <img className={styles.image8Icon} alt="" src="/image-8@2x.png" />
@@ -72,7 +83,7 @@ const Interest = () => {
         <div className={styles.ai}>software</div>
       </div>
       <img className={styles.interestChild} alt="" src="/rectangle-2.svg" />
-      <div className={styles.div1}>저장</div>
+      <div onClick={onClick} className={styles.div1}>저장</div>
     </div>
   );
 };

@@ -4,23 +4,23 @@ import styles from "./SearchDetail.module.css";
 const SearchDetail = () => {
   const navigate = useNavigate();
 
-  const onNavigationmenuHomeClick = useCallback(() => {
+  const onJobsClick = useCallback(() => {
     navigate("/jobs");
   }, [navigate]);
 
-  const onNavigationmenuHome1Click = useCallback(() => {
-    navigate("/");
+  const onSearchClick = useCallback(() => {
+    navigate("/search");
   }, [navigate]);
 
-  const onNavigationmenuHome2Click = useCallback(() => {
+  const onCommuClick = useCallback(() => {
     navigate("/community");
   }, [navigate]);
 
-  const onNavigationmenuHome3Click = useCallback(() => {
+  const onMyPageClick = useCallback(() => {
     navigate("/mypage");
   }, [navigate]);
 
-  const onNavigationmenuHome4Click = useCallback(() => {
+  const onNewsClick = useCallback(() => {
     navigate("/news");
   }, [navigate]);
 
@@ -58,7 +58,7 @@ const SearchDetail = () => {
           <div className={styles.navigationmenuLeft}>
             <div
               className={styles.navigationmenuHome}
-              onClick={onNavigationmenuHomeClick}
+              onClick={onJobsClick}
             >
               <img
                 className={styles.iconBriefcase}
@@ -69,7 +69,7 @@ const SearchDetail = () => {
             </div>
             <div
               className={styles.navigationmenuHome1}
-              onClick={onNavigationmenuHome1Click}
+              onClick={onSearchClick}
             >
               <img
                 className={styles.iconSearchNormal1}
@@ -82,7 +82,7 @@ const SearchDetail = () => {
           <div className={styles.navigationmenuRight}>
             <div
               className={styles.navigationmenuHome2}
-              onClick={onNavigationmenuHome2Click}
+              onClick={onCommuClick}
             >
               <img
                 className={styles.iconMessages2}
@@ -93,7 +93,7 @@ const SearchDetail = () => {
             </div>
             <div
               className={styles.navigationmenuHome3}
-              onClick={onNavigationmenuHome3Click}
+              onClick={onMyPageClick}
             >
               <img className={styles.iconBriefcase} alt="" src="/user5.svg" />
               <div className={styles.job}>Profile</div>
@@ -101,7 +101,7 @@ const SearchDetail = () => {
           </div>
           <div
             className={styles.navigationmenuHome4}
-            onClick={onNavigationmenuHome4Click}
+            onClick={onNewsClick}
           >
             <div className={styles.homelinearWrapper}>
               <img

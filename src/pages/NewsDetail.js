@@ -4,7 +4,7 @@ import styles from "./NewsDetail.module.css";
 const NewsDetail = () => {
   const navigate = useNavigate();
 
-  const onNavigationmenuHomeClick = useCallback(() => {
+  const onJobsClick = useCallback(() => {
     navigate("/jobs");
   }, [navigate]);
 
@@ -42,7 +42,7 @@ const NewsDetail = () => {
           <div className={styles.navigationmenuLeft}>
             <div
               className={styles.navigationmenuHome}
-              onClick={onNavigationmenuHomeClick}
+              onClick={onJobsClick}
             >
               <img
                 className={styles.iconBriefcase}

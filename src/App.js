@@ -106,6 +106,7 @@ function App() {
       <Route path="/communitydetail" element={<CommunityDetail />} />
       <Route path="/landing" element={<Landing />} />
       <Route path="/mypage" element={<MyPage />} />
+      <Route path="/search" element={<Search />} />
     </Routes>
   );
 }

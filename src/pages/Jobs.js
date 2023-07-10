@@ -8,15 +8,15 @@ const Jobs = () => {
     navigate("/jobsdetail");
   }, [navigate]);
 
-  const onNavigationmenuHome1Click = useCallback(() => {
-    navigate("/");
+  const onSearchClick = useCallback(() => {
+    navigate("/search");
   }, [navigate]);
 
-  const onNavigationmenuHome2Click = useCallback(() => {
+  const onCommuClick = useCallback(() => {
     navigate("/community");
   }, [navigate]);
 
-  const onNavigationmenuHome4Click = useCallback(() => {
+  const onNewsClick = useCallback(() => {
     navigate("/news");
   }, [navigate]);
 
@@ -44,7 +44,7 @@ const Jobs = () => {
             </div>
             <div
               className={styles.navigationmenuHome1}
-              onClick={onNavigationmenuHome1Click}
+              onClick={onSearchClick}
             >
               <img className={styles.searchIcon} alt="" src="/search.svg" />
               <div className={styles.job}>Search</div>
@@ -53,7 +53,7 @@ const Jobs = () => {
           <div className={styles.navigationmenuRight}>
             <div
               className={styles.navigationmenuHome2}
-              onClick={onNavigationmenuHome2Click}
+              onClick={onCommuClick}
             >
               <img
                 className={styles.iconMessages2}
@@ -69,7 +69,7 @@ const Jobs = () => {
           </div>
           <div
             className={styles.navigationmenuHome4}
-            onClick={onNavigationmenuHome4Click}
+            onClick={onNewsClick}
           >
             <div className={styles.homelinearWrapper}>
               <img

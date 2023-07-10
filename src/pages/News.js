@@ -8,19 +8,19 @@ const News = () => {
     navigate("/newsdetail");
   }, [navigate]);
 
-  const onNavigationmenuHomeClick = useCallback(() => {
+  const onJobsClick = useCallback(() => {
     navigate("/jobs");
   }, [navigate]);
 
-  const onNavigationmenuHome1Click = useCallback(() => {
-    navigate("/");
+  const onSearchClick = useCallback(() => {
+    navigate("/search");
   }, [navigate]);
 
-  const onNavigationmenuHome2Click = useCallback(() => {
+  const onCommuClick = useCallback(() => {
     navigate("/community");
   }, [navigate]);
 
-  const onNavigationmenuHome3Click = useCallback(() => {
+  const onMyPageClick = useCallback(() => {
     navigate("/mypage");
   }, [navigate]);
 
@@ -40,7 +40,7 @@ const News = () => {
           <div className={styles.navigationmenuLeft}>
             <div
               className={styles.navigationmenuHome}
-              onClick={onNavigationmenuHomeClick}
+              onClick={onJobsClick}
             >
               <img
                 className={styles.iconBriefcase}
@@ -51,7 +51,7 @@ const News = () => {
             </div>
             <div
               className={styles.navigationmenuHome1}
-              onClick={onNavigationmenuHome1Click}
+              onClick={onSearchClick}
             >
               <img className={styles.iconBriefcase} alt="" src="/search.svg" />
               <div className={styles.job}>Search</div>
@@ -60,7 +60,7 @@ const News = () => {
           <div className={styles.navigationmenuRight}>
             <div
               className={styles.navigationmenuHome2}
-              onClick={onNavigationmenuHome2Click}
+              onClick={onCommuClick}
             >
               <img
                 className={styles.iconMessages2}
@@ -71,7 +71,7 @@ const News = () => {
             </div>
             <div
               className={styles.navigationmenuHome3}
-              onClick={onNavigationmenuHome3Click}
+              onClick={onMyPageClick}
             >
               <img className={styles.iconBriefcase} alt="" src="/user5.svg" />
               <div className={styles.job}>Profile</div>
