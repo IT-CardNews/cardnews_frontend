@@ -45,7 +45,7 @@ const MyPage = () => {
             <img className={styles.avatarsIcon} alt="" src="/avatars.svg" />
             <div className={styles.text} />
           </div>
-          <div className={styles.div2}>이름</div>
+          <div className={styles.div2}>{localStorage.getItem("nickname")}</div>
         </div>
       </div>
       <div className={styles.menu1homelight}>

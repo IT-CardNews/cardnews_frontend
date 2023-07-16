@@ -1,21 +1,14 @@
-import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
 import styles from "./Landing.module.css";
+import KakaoLogin from "../login/kakaologin";
 const Landing = () => {
-  const navigate = useNavigate();
-  const onClick = useCallback(() => {
-    navigate("/interest");
-  }, [navigate]);
-
+  const onClick = () => { //로그인페이지 이동
+    window.location.href = `https://kauth.kakao.com/oauth/authorize?client_id=${process.env.REACT_APP_REST_API_KEY}&redirect_uri=${process.env.REACT_APP_REDIRECT_URI}&response_type=code`;
+  };
+  KakaoLogin();
   return (
-    <div  onClick={onClick} className={styles.landing}>
+    <div onClick={onClick} className={styles.landing}>
       <img className={styles.icon} alt="" src="/--0013-1@2x.png" />
-      <img
-        className={styles.landingChild}
-        alt=""
-        src="/rectangle-2.svg"
-       
-      />
+      <img className={styles.landingChild} alt="" src="/rectangle-2.svg" />
       <div className={styles.eatIt}>EAT IT을 카카오로 시작하기</div>
     </div>
   );

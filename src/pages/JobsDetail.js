@@ -27,7 +27,7 @@ const JobsDetail = () => {
   return (
     <div className={styles.jobsdetail}>
       <b className={styles.b}>
-        <p className={styles.p}>{`00님을 위한 `}</p>
+        <p className={styles.p}>{`${localStorage.getItem("nickname")}님을 위한 `}</p>
         <p className={styles.p}>취업 공고</p>
       </b>
       <img className={styles.image26Icon} alt="" src="/image-26@2x.png" />

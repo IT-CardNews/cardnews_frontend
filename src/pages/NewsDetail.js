@@ -8,11 +8,11 @@ const NewsDetail = () => {
     navigate("/jobs");
   }, [navigate]);
 
-  const onNavigationmenuHome2Click = useCallback(() => {
+  const onCommuClick = useCallback(() => {
     navigate("/community");
   }, [navigate]);
 
-  const onNavigationmenuHome3Click = useCallback(() => {
+  const onMyPageClick = useCallback(() => {
     navigate("/mypage");
   }, [navigate]);
 
@@ -24,7 +24,7 @@ const NewsDetail = () => {
     <div className={styles.newsdetail}>
       <div className={styles.newsdetailChild} />
       <b className={styles.b}>
-        <p className={styles.p}>{`00님을 위한 `}</p>
+        <p className={styles.p}>{`${localStorage.getItem("nickname")}님을 위한 `}</p>
         <p className={styles.p}>오늘의 추천 뉴스</p>
       </b>
       <img className={styles.image9Icon} alt="" src="/image-9@2x.png" />
@@ -59,7 +59,7 @@ const NewsDetail = () => {
           <div className={styles.navigationmenuRight}>
             <div
               className={styles.navigationmenuHome2}
-              onClick={onNavigationmenuHome2Click}
+              onClick={onCommuClick}
             >
               <img
                 className={styles.iconMessages2}
@@ -70,7 +70,7 @@ const NewsDetail = () => {
             </div>
             <div
               className={styles.navigationmenuHome3}
-              onClick={onNavigationmenuHome3Click}
+              onClick={onMyPageClick}
             >
               <img className={styles.iconBriefcase} alt="" src="/user4.svg" />
               <div className={styles.job}>Profile</div>

@@ -24,7 +24,7 @@ const Jobs = () => {
     <div className={styles.jobs}>
       <div className={styles.div}>화면을 옆으로 넘겨주세요.</div>
       <b className={styles.b}>
-        <p className={styles.p}>{`00님을 위한 `}</p>
+        <p className={styles.p}>{`${localStorage.getItem("nickname")}님을 위한 `}</p>
         <p className={styles.p}>취업 공고</p>
       </b>
       <div className={styles.rectangleParent} onClick={onGroupContainerClick}>
