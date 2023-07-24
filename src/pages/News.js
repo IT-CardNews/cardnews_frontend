@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styles from "./News.module.css";
 const News = () => {
   const navigate = useNavigate();
-
+  
   const onGroupContainerClick = useCallback(() => {
     navigate("/newsdetail");
   }, [navigate]);
@@ -45,7 +45,7 @@ const News = () => {
               <img
                 className={styles.iconBriefcase}
                 alt=""
-                src="/-icon-briefcase.svg"
+                src="https://sahayeon0717.blob.core.windows.net/media/-icon-briefcase.svg"
               />
               <div className={styles.job}>JOB</div>
             </div>
@@ -53,7 +53,7 @@ const News = () => {
               className={styles.navigationmenuHome1}
               onClick={onSearchClick}
             >
-              <img className={styles.iconBriefcase} alt="" src="/search.svg" />
+              <img className={styles.iconBriefcase} alt="" src="https://sahayeon0717.blob.core.windows.net/media/search.svg" />
               <div className={styles.job}>Search</div>
             </div>
           </div>
@@ -65,7 +65,7 @@ const News = () => {
               <img
                 className={styles.iconMessages2}
                 alt=""
-                src="/-icon-messages-25.svg"
+                src="https://sahayeon0717.blob.core.windows.net/media/-icon-messages-25.svg"
               />
               <div className={styles.community}>Community</div>
             </div>
@@ -73,13 +73,13 @@ const News = () => {
               className={styles.navigationmenuHome3}
               onClick={onMyPageClick}
             >
-              <img className={styles.iconBriefcase} alt="" src="/user5.svg" />
+              <img className={styles.iconBriefcase} alt="" src="https://sahayeon0717.blob.core.windows.net/media/user5.svg" />
               <div className={styles.job}>Profile</div>
             </div>
           </div>
           <div className={styles.navigationmenuHome4}>
             <div className={styles.homeWrapper}>
-              <img className={styles.iconBriefcase} alt="" src="/home1.svg" />
+              <img className={styles.iconBriefcase} alt="" src="https://sahayeon0717.blob.core.windows.net/media/home1.svg" />
             </div>
           </div>
         </div>
@@ -89,27 +89,27 @@ const News = () => {
       </div>
       <div className={styles.cardnewsParent}>
         <div className={styles.cardnews}>
-          <img className={styles.image9Icon} alt="" src="/image-9@2x.png" />
-          <img className={styles.image9Icon} alt="" src="/image-10@2x.png" />
-          <img className={styles.image9Icon} alt="" src="/image-11@2x.png" />
-          <img className={styles.image9Icon} alt="" src="/image-12@2x.png" />
-          <img className={styles.image9Icon} alt="" src="/image-13@2x.png" />
-          <img className={styles.image9Icon} alt="" src="/image-14@2x.png" />
-          <img className={styles.image9Icon} alt="" src="/image-15@2x.png" />
-          <img className={styles.image9Icon} alt="" src="/image-16@2x.png" />
-          <img className={styles.image9Icon} alt="" src="/image-17@2x.png" />
-          <img className={styles.image9Icon} alt="" src="/image-18@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-9@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-10@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-11@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-12@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-13@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-14@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-15@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-16@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-17@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-18@2x.png" />
         </div>
-        <img className={styles.frameChild} alt="" src="/group-12.svg" />
-        <img className={styles.frameItem} alt="" src="/group-13.svg" />
-        <img className={styles.frameInner} alt="" src="/group-21.svg" />
-        <img className={styles.groupIcon} alt="" src="/group-31.svg" />
-        <img className={styles.frameChild1} alt="" src="/group-9.svg" />
-        <img className={styles.frameChild2} alt="" src="/group-10.svg" />
-        <img className={styles.frameChild3} alt="" src="/group-111.svg" />
-        <img className={styles.frameChild4} alt="" src="/group-121.svg" />
-        <img className={styles.frameChild5} alt="" src="/group-111.svg" />
-        <img className={styles.frameChild6} alt="" src="/group-10.svg" />
+        <img className={styles.frameChild} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-12.svg" />
+        <img className={styles.frameItem} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-13.svg" />
+        <img className={styles.frameInner} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-10.svg" />
+        <img className={styles.groupIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-31.svg" />
+        <img className={styles.frameChild1} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-9.svg" />
+        <img className={styles.frameChild2} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-10.svg" />
+        <img className={styles.frameChild3} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-111.svg" />
+        <img className={styles.frameChild4} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-121.svg" />
+        <img className={styles.frameChild5} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-111.svg" />
+        <img className={styles.frameChild6} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-10.svg" />
       </div>
     </div>
   );

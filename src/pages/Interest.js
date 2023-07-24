@@ -13,14 +13,14 @@ const Interest = () => {
 
   return (
     <div className={styles.interest} data-scroll-to="interestContainer">
-      <img className={styles.image8Icon} alt="" src="/image-8@2x.png" />
-      <img className={styles.image7Icon} alt="" src="/image-7@2x.png" />
-      <img className={styles.image6Icon} alt="" src="/image-6@2x.png" />
-      <img className={styles.image5Icon} alt="" src="/image-5@2x.png" />
-      <img className={styles.image4Icon} alt="" src="/image-4@2x.png" />
-      <img className={styles.image3Icon} alt="" src="/image-3@2x.png" />
-      <img className={styles.image2Icon} alt="" src="/image-2@2x.png" />
-      <img className={styles.image1Icon} alt="" src="/image-1@2x.png" />
+      <img className={styles.image8Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-8@2x.png" />
+      <img className={styles.image7Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-7@2x.png" />
+      <img className={styles.image6Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-6@2x.png" />
+      <img className={styles.image5Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-5@2x.png" />
+      <img className={styles.image4Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-4@2x.png" />
+      <img className={styles.image3Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-3@2x.png" />
+      <img className={styles.image2Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/user_pic.png" />
+      <img className={styles.image1Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-1@2x.png" />
       <div className={styles.frameParent}>
         <div className={styles.wrapper}>
           <b className={styles.b}>관심있는 분야를 선택해주세요</b>
@@ -82,7 +82,7 @@ const Interest = () => {
       <div className={styles.softwareWrapper}>
         <div className={styles.ai}>software</div>
       </div>
-      <img className={styles.interestChild} alt="" src="/rectangle-2.svg" />
+      <img className={styles.interestChild} alt="" src="https://sahayeon0717.blob.core.windows.net/media/rectangle-2.svg" />
       <div onClick={onClick} className={styles.div1}>저장</div>
     </div>
   );

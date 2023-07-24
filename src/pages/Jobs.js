@@ -38,7 +38,7 @@ const Jobs = () => {
               <img
                 className={styles.iconBriefcase}
                 alt=""
-                src="/-icon-briefcase1.svg"
+                src="https://sahayeon0717.blob.core.windows.net/media/-icon-briefcase1.svg"
               />
               <div className={styles.job}>JOB</div>
             </div>
@@ -46,7 +46,7 @@ const Jobs = () => {
               className={styles.navigationmenuHome1}
               onClick={onSearchClick}
             >
-              <img className={styles.searchIcon} alt="" src="/search.svg" />
+              <img className={styles.searchIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/search.svg" />
               <div className={styles.job}>Search</div>
             </div>
           </div>
@@ -58,12 +58,12 @@ const Jobs = () => {
               <img
                 className={styles.iconMessages2}
                 alt=""
-                src="/-icon-messages-23.svg"
+                src="https://sahayeon0717.blob.core.windows.net/media/-icon-messages-23.svg"
               />
               <div className={styles.community}>Community</div>
             </div>
             <div className={styles.navigationmenuHome3}>
-              <img className={styles.searchIcon} alt="" src="/user3.svg" />
+              <img className={styles.searchIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/user3.svg" />
               <div className={styles.job}>Profile</div>
             </div>
           </div>
@@ -75,7 +75,7 @@ const Jobs = () => {
               <img
                 className={styles.searchIcon}
                 alt=""
-                src="/homelinear1.svg"
+                src="https://sahayeon0717.blob.core.windows.net/media/homelinear1.svg"
               />
             </div>
           </div>
@@ -89,30 +89,30 @@ const Jobs = () => {
           <img
             className={styles.maskGroupIcon}
             alt=""
-            src="/mask-group@2x.png"
+            src="https://sahayeon0717.blob.core.windows.net/media/mask-group@2x.png"
           />
           <img
             className={styles.maskGroupIcon}
             alt=""
-            src="/mask-group1@2x.png"
+            src="https://sahayeon0717.blob.core.windows.net/media/mask-group1@2x.png"
           />
           <img
             className={styles.maskGroupIcon}
             alt=""
-            src="/mask-group2@2x.png"
+            src="https://sahayeon0717.blob.core.windows.net/media/mask-group2@2x.png"
           />
           <img
             className={styles.maskGroupIcon}
             alt=""
-            src="/mask-group3@2x.png"
+            src="https://sahayeon0717.blob.core.windows.net/media/mask-group3@2x.png"
           />
-          <img className={styles.maskGroupIcon} alt="" src="/group-67@2x.png" />
+          <img className={styles.maskGroupIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-67@2x.png" />
         </div>
-        <img className={styles.frameItem} alt="" src="/group-1.svg" />
-        <img className={styles.frameInner} alt="" src="/group-2.svg" />
-        <img className={styles.groupIcon} alt="" src="/group-6.svg" />
-        <img className={styles.frameChild1} alt="" src="/group-3.svg" />
-        <img className={styles.frameChild2} alt="" src="/group-11.svg" />
+        <img className={styles.frameItem} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-1.svg" />
+        <img className={styles.frameInner} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-2.svg" />
+        <img className={styles.groupIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-6.svg" />
+        <img className={styles.frameChild1} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-3.svg" />
+        <img className={styles.frameChild2} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-11.svg" />
       </div>
     </div>
   );

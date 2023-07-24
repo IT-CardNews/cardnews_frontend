@@ -31,12 +31,12 @@ const Community = () => {
         <div className={styles.homeIndicator} />
       </div>
       <div className={styles.div}>2023년 06월 27일 (화) 오전 8:15</div>
-      <img className={styles.userActionIcon} alt="" src="/user-action.svg" />
+      <img className={styles.userActionIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/user-action.svg" />
       <div className={styles.betweenBox} />
       <div className={styles.communityChild} />
       <div className={styles.article1} onClick={onArticle1ContainerClick}>
         <div className={styles.parent}>
-          <img className={styles.icon} alt="" src="/-2@2x.png" />
+          <img className={styles.icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/user_pic.png" />
           <div className={styles.div1}>김철진</div>
           <div className={styles.div2}>스타트업 개발자</div>
         </div>
@@ -56,7 +56,7 @@ const Community = () => {
         <b className={styles.rangeForIn}>파이썬의 range() 함수와 for-in 루프</b>
       </div>
       <div className={styles.userInfo}>
-        <img className={styles.icon} alt="" src="/-2@2x.png" />
+        <img className={styles.icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/user_pic.png" />
         <div className={styles.div1}>김철진</div>
         <div className={styles.div2}>스타트업 개발자</div>
       </div>
@@ -76,9 +76,9 @@ const Community = () => {
         </p>
       </div>
       <div className={styles.div8}>2023년 06월 26일 (월) 오전 9:45</div>
-      <img className={styles.userActionIcon1} alt="" src="/user-action1.svg" />
+      <img className={styles.userActionIcon1} alt="" src="https://sahayeon0717.blob.core.windows.net/media/user-action1.svg" />
       <b className={styles.b}>99%가 코딩 공부를 실패하는 이유</b>
-      <img className={styles.profilepicIcon} alt="" src="/profilepic@2x.png" />
+      <img className={styles.profilepicIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/profilepic@2x.png" />
       <div className={styles.menu1homelight}>
         <div className={styles.navigationmenuLeftParent}>
           <div className={styles.navigationmenuLeft}>
@@ -89,7 +89,7 @@ const Community = () => {
               <img
                 className={styles.iconBriefcase}
                 alt=""
-                src="/-icon-briefcase.svg"
+                src="https://sahayeon0717.blob.core.windows.net/media/-icon-briefcase.svg"
               />
               <div className={styles.job}>JOB</div>
             </div>
@@ -97,7 +97,7 @@ const Community = () => {
               className={styles.navigationmenuHome1}
               onClick={onSearchClick}
             >
-              <img className={styles.iconBriefcase} alt="" src="/search.svg" />
+              <img className={styles.iconBriefcase} alt="" src="https://sahayeon0717.blob.core.windows.net/media/search.svg" />
               <div className={styles.job}>Search</div>
             </div>
           </div>
@@ -106,7 +106,7 @@ const Community = () => {
               <img
                 className={styles.iconBriefcase}
                 alt=""
-                src="/-icon-messages-21.svg"
+                src="https://sahayeon0717.blob.core.windows.net/media/-icon-messages-21.svg"
               />
               <div className={styles.community2}>Community</div>
             </div>
@@ -114,7 +114,7 @@ const Community = () => {
               className={styles.navigationmenuHome3}
               onClick={onMyPageClick}
             >
-              <img className={styles.iconBriefcase} alt="" src="/user1.svg" />
+              <img className={styles.iconBriefcase} alt="" src="https://sahayeon0717.blob.core.windows.net/media/user1.svg" />
               <div className={styles.job}>Profile</div>
             </div>
           </div>
@@ -126,7 +126,7 @@ const Community = () => {
               <img
                 className={styles.iconBriefcase}
                 alt=""
-                src="/homelinear1.svg"
+                src="https://sahayeon0717.blob.core.windows.net/media/homelinear1.svg"
               />
             </div>
           </div>

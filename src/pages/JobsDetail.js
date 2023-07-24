@@ -30,7 +30,7 @@ const JobsDetail = () => {
         <p className={styles.p}>{`${localStorage.getItem("nickname")}님을 위한 `}</p>
         <p className={styles.p}>취업 공고</p>
       </b>
-      <img className={styles.image26Icon} alt="" src="/image-26@2x.png" />
+      <img className={styles.image26Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-26@2x.png" />
       <div className={styles.menu1homelight}>
         <div className={styles.navigationmenuLeftParent}>
           <div className={styles.navigationmenuLeft}>
@@ -41,7 +41,7 @@ const JobsDetail = () => {
               <img
                 className={styles.iconBriefcase}
                 alt=""
-                src="/-icon-briefcase1.svg"
+                src="https://sahayeon0717.blob.core.windows.net/media/-icon-briefcase1.svg-icon-briefcase1.svg"
               />
               <div className={styles.job}>{` `}</div>
             </div>
@@ -49,7 +49,7 @@ const JobsDetail = () => {
               className={styles.navigationmenuHome1}
               onClick={onSearchClick}
             >
-              <img className={styles.searchIcon} alt="" src="/search.svg" />
+              <img className={styles.searchIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/search.svg" />
               <div className={styles.job}>Search</div>
             </div>
           </div>
@@ -61,7 +61,7 @@ const JobsDetail = () => {
               <img
                 className={styles.iconMessages2}
                 alt=""
-                src="/-icon-messages-22.svg"
+                src="https://sahayeon0717.blob.core.windows.net/media/-icon-messages-22.svg"
               />
               <div className={styles.community}>Community</div>
             </div>
@@ -69,7 +69,7 @@ const JobsDetail = () => {
               className={styles.navigationmenuHome3}
               onClick={onMyPageClick}
             >
-              <img className={styles.searchIcon} alt="" src="/user2.svg" />
+              <img className={styles.searchIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/user2.svg" />
               <div className={styles.job}>Profile</div>
             </div>
           </div>
@@ -81,7 +81,7 @@ const JobsDetail = () => {
               <img
                 className={styles.searchIcon}
                 alt=""
-                src="/homelinear2.svg"
+                src="https://sahayeon0717.blob.core.windows.net/media/homelinear2.svg"
               />
             </div>
           </div>

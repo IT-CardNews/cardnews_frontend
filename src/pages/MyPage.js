@@ -27,7 +27,7 @@ const MyPage = () => {
         <img
           className={styles.iconSettingsOutline}
           alt=""
-          src="/-icon-settings-outline.svg"
+          src="https://sahayeon0717.blob.core.windows.net/media/-icon-settings-outline.svg"
         />
         <div className={styles.div}>회원 정보 관리</div>
       </div>
@@ -35,14 +35,14 @@ const MyPage = () => {
         <img
           className={styles.iconBookmarkOutline}
           alt=""
-          src="/-icon-bookmark-outline.svg"
+          src="https://sahayeon0717.blob.core.windows.net/media/-icon-bookmark-outline.svg"
         />
         <div className={styles.div}>북마크</div>
       </div>
       <div className={styles.frame}>
         <div className={styles.header}>
           <div className={styles.header1}>
-            <img className={styles.avatarsIcon} alt="" src="/avatars.svg" />
+            <img className={styles.avatarsIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/avatars.svg" />
             <div className={styles.text} />
           </div>
           <div className={styles.div2}>{localStorage.getItem("nickname")}</div>
@@ -58,7 +58,7 @@ const MyPage = () => {
               <img
                 className={styles.iconBriefcase}
                 alt=""
-                src="/-icon-briefcase.svg"
+                src="https://sahayeon0717.blob.core.windows.net/media/-icon-briefcase.svg"
               />
               <div className={styles.job}>JOB</div>
             </div>
@@ -66,7 +66,7 @@ const MyPage = () => {
               className={styles.navigationmenuHome1}
               onClick={onSearchClick}
             >
-              <img className={styles.iconBriefcase} alt="" src="/search.svg" />
+              <img className={styles.iconBriefcase} alt="" src="https://sahayeon0717.blob.core.windows.net/media/search.svg" />
               <div className={styles.job}>Search</div>
             </div>
           </div>
@@ -78,12 +78,12 @@ const MyPage = () => {
               <img
                 className={styles.iconMessages2}
                 alt=""
-                src="/-icon-messages-28.svg"
+                src="https://sahayeon0717.blob.core.windows.net/media/-icon-user.svg"
               />
               <div className={styles.community}>Community</div>
             </div>
             <div className={styles.navigationmenuHome3}>
-              <img className={styles.iconUser} alt="" src="/-icon-user.svg" />
+              <img className={styles.iconUser} alt="" src="https://sahayeon0717.blob.core.windows.net/media/-icon-user.svg" />
               <div className={styles.job}>Profile</div>
             </div>
           </div>
@@ -95,7 +95,7 @@ const MyPage = () => {
               <img
                 className={styles.iconBriefcase}
                 alt=""
-                src="/homelinear1.svg"
+                src="https://sahayeon0717.blob.core.windows.net/media/homelinear1.svg"
               />
             </div>
           </div>
@@ -118,13 +118,13 @@ const MyPage = () => {
           <img
             className={styles.vuesaxoutlinearrowRightIcon}
             alt=""
-            src="/vuesaxoutlinearrowright.svg"
+            src="https://sahayeon0717.blob.core.windows.net/media/vuesaxoutlinearrowright.svg"
           />
         </div>
         <img
           className={styles.vuesaxoutlinedirectInboxIcon}
           alt=""
-          src="/vuesaxoutlinedirectinbox.svg"
+          src="https://sahayeon0717.blob.core.windows.net/media/vuesaxoutlinedirectinbox.svg"
         />
       </div>
       <div className={styles.groupDiv}>
@@ -133,13 +133,13 @@ const MyPage = () => {
           <img
             className={styles.vuesaxoutlinearrowRightIcon}
             alt=""
-            src="/vuesaxoutlinearrowright.svg"
+            src="https://sahayeon0717.blob.core.windows.net/media/vuesaxoutlinearrowright.svg"
           />
         </div>
         <img
           className={styles.vuesaxoutlinedirectInboxIcon}
           alt=""
-          src="/vuesaxoutlineticketdiscount.svg"
+          src="https://sahayeon0717.blob.core.windows.net/media/vuesaxoutlineticketdiscount.svg"
         />
       </div>
       <div className={styles.groupParent1}>
@@ -148,13 +148,13 @@ const MyPage = () => {
           <img
             className={styles.vuesaxoutlinearrowRightIcon}
             alt=""
-            src="/vuesaxoutlinearrowright.svg"
+            src="https://sahayeon0717.blob.core.windows.net/media/vuesaxoutlinearrowright.svg"
           />
         </div>
         <img
           className={styles.vuesaxoutlinedirectInboxIcon}
           alt=""
-          src="/vuesaxoutlinelovely.svg"
+          src="https://sahayeon0717.blob.core.windows.net/media/vuesaxoutlinelovely.svg"
         />
       </div>
       <div className={styles.groupParent2}>
@@ -163,13 +163,13 @@ const MyPage = () => {
           <img
             className={styles.vuesaxoutlinearrowRightIcon}
             alt=""
-            src="/vuesaxoutlinearrowright.svg"
+            src="https://sahayeon0717.blob.core.windows.net/media/vuesaxoutlinearrowright.svg"
           />
         </div>
         <img
           className={styles.vuesaxoutlinedirectInboxIcon}
           alt=""
-          src="/vuesaxoutlinedocumentprevious.svg"
+          src="https://sahayeon0717.blob.core.windows.net/media/vuesaxoutlinedocumentprevious.svg"
         />
       </div>
       <div className={styles.mypageChild} />

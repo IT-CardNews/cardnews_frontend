@@ -112,7 +112,7 @@ const CommunityDetail = () => {
       </div>
       <div className={styles.communitydetailChild} />
       <div className={styles.userInfo}>
-        <img className={styles.icon} alt="" src="/-2@2x.png" />
+        <img className={styles.icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/user_pic.png" />
         <div className={styles.div}>김철진</div>
         <div className={styles.wrapper}>
           <div className={styles.div1}>스타트업 개발자</div>
@@ -207,7 +207,7 @@ const CommunityDetail = () => {
         </div>
         <b className={styles.b}>댓글 6</b>
         <div className={styles.comment1}>
-          <img className={styles.icon} alt="" src="/profilepic@2x.png" />
+          <img className={styles.icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/profilepic@2x.png" />
           <div className={styles.parent}>
             <div className={styles.div2}>김기태</div>
             <div className={styles.div3}>스타트업 개발자 / 1시간 전</div>
@@ -244,7 +244,7 @@ const CommunityDetail = () => {
           <div className={styles.div5}>댓글 달기</div>
           <div className={styles.userInfo1}>
             <div className={styles.userpic2Wrapper}>
-              <img className={styles.icon} alt="" src="/-2@2x.png" />
+              <img className={styles.icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/user_pic.png" />
             </div>
             <div className={styles.writerWrapper}>
               <div className={styles.writer}>
@@ -265,7 +265,7 @@ const CommunityDetail = () => {
           </div>
           <div className={styles.comment31}>
             <div className={styles.userInfro3}>
-              <img className={styles.icon} alt="" src="/profilepic2@2x.png" />
+              <img className={styles.icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/profilepic2@2x.png" />
               <div className={styles.div9}>용승림</div>
               <div className={styles.div10}>대학생 / 방금 전</div>
             </div>
@@ -297,7 +297,7 @@ const CommunityDetail = () => {
                 <div className={styles.div6}>작성자</div>
               </div>
               <div className={styles.div7}>스타트업 개발자 / 1시간 전</div>
-              <img className={styles.icon} alt="" src="/-2@2x.png" />
+              <img className={styles.icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/user_pic.png" />
             </div>
             <div className={styles.div5}>댓글 달기</div>
           </div>
@@ -309,8 +309,8 @@ const CommunityDetail = () => {
       </div>
       <div className={styles.div17}>2023년 06월 27일 (화) 오전 8:15</div>
       <div className={styles.div18}>{`좋아요 12  `}</div>
-      <img className={styles.shareIcon} alt="" src="/share-icon.svg" />
-      <img className={styles.startIcon} alt="" src="/start-icon.svg" />
+      <img className={styles.shareIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/share-icon.svg" />
+      <img className={styles.startIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/start-icon.svg" />
       <div className={styles.menu1homelight}>
         <div className={styles.navigationmenuLeftParent}>
           <div className={styles.navigationmenuLeft}>
@@ -321,7 +321,7 @@ const CommunityDetail = () => {
               <img
                 className={styles.iconBriefcase}
                 alt=""
-                src="/-icon-briefcase3.svg"
+                src="https://sahayeon0717.blob.core.windows.net/media/-icon-briefcase3.svg"
               />
               <div className={styles.job}>JOB</div>
             </div>
@@ -329,7 +329,7 @@ const CommunityDetail = () => {
               className={styles.navigationmenuHome1}
               onClick={onSearchClick}
             >
-              <img className={styles.searchIcon} alt="" src="/search.svg" />
+              <img className={styles.searchIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/search.svg" />
               <div className={styles.job}>Search</div>
             </div>
           </div>
@@ -338,7 +338,7 @@ const CommunityDetail = () => {
               <img
                 className={styles.iconMessages2}
                 alt=""
-                src="/-icon-messages-27.svg"
+                src="https://sahayeon0717.blob.core.windows.net/media/-icon-messages-27.svg"
               />
               <div className={styles.community1}>Community</div>
             </div>
@@ -346,7 +346,7 @@ const CommunityDetail = () => {
               className={styles.navigationmenuHome3}
               onClick={onMyPageClick}
             >
-              <img className={styles.searchIcon} alt="" src="/user2.svg" />
+              <img className={styles.searchIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/user2.svg" />
               <div className={styles.job}>Profile</div>
             </div>
           </div>
@@ -361,7 +361,7 @@ const CommunityDetail = () => {
               <img
                 className={styles.searchIcon}
                 alt=""
-                src="/homelinear2.svg"
+                src="https://sahayeon0717.blob.core.windows.net/media/homelinear2.svg"
               />
             </div>
           </div>

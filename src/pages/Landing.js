@@ -7,8 +7,8 @@ const Landing = () => {
   KakaoLogin();
   return (
     <div onClick={onClick} className={styles.landing}>
-      <img className={styles.icon} alt="" src="/--0013-1@2x.png" />
-      <img className={styles.landingChild} alt="" src="/rectangle-2.svg" />
+      <img className={styles.icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/mainlogo.png" />
+      <img className={styles.landingChild} alt="" src="https://sahayeon0717.blob.core.windows.net/media/rectangle-2.svg" />
       <div className={styles.eatIt}>EAT IT을 카카오로 시작하기</div>
     </div>
   );

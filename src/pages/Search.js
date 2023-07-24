@@ -34,7 +34,7 @@ const Search = () => {
         <img
           className={styles.iconMessageCircleOutline}
           alt=""
-          src="/-icon-message-circle-outline.svg"
+          src="https://sahayeon0717.blob.core.windows.net/media/-icon-message-circle-outline.svg"
         />
       </div>
       <div className={styles.searchChild} />
@@ -179,14 +179,14 @@ const Search = () => {
               className={styles.navigationmenuHome}
               onClick={onJobsClick}
             >
-              <img className={styles.groupIcon} alt="" src="/group.svg" />
+              <img className={styles.groupIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group.svg" />
               <div className={styles.job}>JOB</div>
             </div>
             <div className={styles.navigationmenuHome1}>
               <img
                 className={styles.iconSearchNormal1}
                 alt=""
-                src="/-icon-search-normal-1.svg"
+                src="https://sahayeon0717.blob.core.windows.net/media/-icon-search-normal-1.svg"
               />
               <div className={styles.job}>Search</div>
             </div>
@@ -199,7 +199,7 @@ const Search = () => {
               <img
                 className={styles.iconMessages2}
                 alt=""
-                src="/-icon-messages-2.svg"
+                src="https://sahayeon0717.blob.core.windows.net/media/-icon-messages-2.svg"
               />
               <div className={styles.community1}>Community</div>
             </div>
@@ -207,7 +207,7 @@ const Search = () => {
               className={styles.navigationmenuHome3}
               onClick={onMyPageClick}
             >
-              <img className={styles.userIcon} alt="" src="/user.svg" />
+              <img className={styles.userIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/user.svg" />
               <div className={styles.job}>Profile</div>
             </div>
           </div>
@@ -216,7 +216,7 @@ const Search = () => {
             onClick={onNewsClick}
           >
             <div className={styles.homelinearWrapper}>
-              <img className={styles.userIcon} alt="" src="/homelinear.svg" />
+              <img className={styles.userIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/homelinear.svg" />
             </div>
           </div>
         </div>
