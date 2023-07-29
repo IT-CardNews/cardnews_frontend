@@ -46,15 +46,15 @@ const Jobs = () => {
     navigate("/jobsdetail", { state: { job: selectedJob } });
   }, [navigate, jobs]);
 
-  const onNavigationmenuHome1Click = useCallback(() => {
-    navigate("/");
+  const onSearchClick = useCallback(() => {
+    navigate("/search");
   }, [navigate]);
 
-  const onNavigationmenuHome2Click = useCallback(() => {
+  const onCommuClick = useCallback(() => {
     navigate("/community");
   }, [navigate]);
 
-  const onNavigationmenuHome4Click = useCallback(() => {
+  const onNewsClick = useCallback(() => {
     navigate("/news");
   }, [navigate]);
 
@@ -65,7 +65,7 @@ const Jobs = () => {
       </div>
       <div className={styles.div}>화면을 옆으로 넘겨주세요.</div>
       <b className={styles.b}>
-        <p className={styles.p}>{`00님을 위한 `}</p>
+        <p className={styles.p}>{`${localStorage.getItem("nickname")}님을 위한 `}</p>
         <p className={styles.p}>취업 공고</p>
       </b>
       <div className={styles.rectangleParent} onClick={() => onGroupContainerClick(currentImageIndex)}>
@@ -89,7 +89,7 @@ const Jobs = () => {
             </div>
             <div
               className={styles.navigationmenuHome1}
-              onClick={onNavigationmenuHome1Click}
+              onClick={onSearchClick}
             >
               <img className={styles.searchIcon} alt="" src="/search.svg" />
               <div className={styles.job}>Search</div>
@@ -98,7 +98,7 @@ const Jobs = () => {
           <div className={styles.navigationmenuRight}>
             <div
               className={styles.navigationmenuHome2}
-              onClick={onNavigationmenuHome2Click}
+              onClick={onCommuClick}
             >
               <img
                 className={styles.iconMessages2}
@@ -114,7 +114,7 @@ const Jobs = () => {
           </div>
           <div
             className={styles.navigationmenuHome4}
-            onClick={onNavigationmenuHome4Click}
+            onClick={onNewsClick}
           >
             <div className={styles.homelinearWrapper}>
               <img

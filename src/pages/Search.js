@@ -4,19 +4,19 @@ import styles from "./Search.module.css";
 const Search = () => {
   const navigate = useNavigate();
 
-  const onNavigationmenuHomeClick = useCallback(() => {
+  const onJobsClick = useCallback(() => {
     navigate("/jobs");
   }, [navigate]);
 
-  const onNavigationmenuHome2Click = useCallback(() => {
+  const onCommuClick = useCallback(() => {
     navigate("/community");
   }, [navigate]);
 
-  const onNavigationmenuHome3Click = useCallback(() => {
+  const onMyPageClick = useCallback(() => {
     navigate("/mypage");
   }, [navigate]);
 
-  const onNavigationmenuHome4Click = useCallback(() => {
+  const onNewsClick = useCallback(() => {
     navigate("/news");
   }, [navigate]);
 
@@ -177,7 +177,7 @@ const Search = () => {
           <div className={styles.navigationmenuLeft}>
             <div
               className={styles.navigationmenuHome}
-              onClick={onNavigationmenuHomeClick}
+              onClick={onJobsClick}
             >
               <img className={styles.groupIcon} alt="" src="/group.svg" />
               <div className={styles.job}>JOB</div>
@@ -194,7 +194,7 @@ const Search = () => {
           <div className={styles.navigationmenuRight}>
             <div
               className={styles.navigationmenuHome2}
-              onClick={onNavigationmenuHome2Click}
+              onClick={onCommuClick}
             >
               <img
                 className={styles.iconMessages2}
@@ -205,7 +205,7 @@ const Search = () => {
             </div>
             <div
               className={styles.navigationmenuHome3}
-              onClick={onNavigationmenuHome3Click}
+              onClick={onMyPageClick}
             >
               <img className={styles.userIcon} alt="" src="/user.svg" />
               <div className={styles.job}>Profile</div>
@@ -213,7 +213,7 @@ const Search = () => {
           </div>
           <div
             className={styles.navigationmenuHome4}
-            onClick={onNavigationmenuHome4Click}
+            onClick={onNewsClick}
           >
             <div className={styles.homelinearWrapper}>
               <img className={styles.userIcon} alt="" src="/homelinear.svg" />

@@ -8,19 +8,19 @@ const Community = () => {
     navigate("/communitydetail");
   }, [navigate]);
 
-  const onNavigationmenuHomeClick = useCallback(() => {
+  const onJobsClick = useCallback(() => {
     navigate("/jobs");
   }, [navigate]);
 
-  const onNavigationmenuHome1Click = useCallback(() => {
-    navigate("/");
+  const onSearchClick = useCallback(() => {
+    navigate("/search");
   }, [navigate]);
 
-  const onNavigationmenuHome3Click = useCallback(() => {
+  const onMyPageClick = useCallback(() => {
     navigate("/mypage");
   }, [navigate]);
 
-  const onNavigationmenuHome4Click = useCallback(() => {
+  const onNewsClick = useCallback(() => {
     navigate("/news");
   }, [navigate]);
 
@@ -84,7 +84,7 @@ const Community = () => {
           <div className={styles.navigationmenuLeft}>
             <div
               className={styles.navigationmenuHome}
-              onClick={onNavigationmenuHomeClick}
+              onClick={onJobsClick}
             >
               <img
                 className={styles.iconBriefcase}
@@ -95,7 +95,7 @@ const Community = () => {
             </div>
             <div
               className={styles.navigationmenuHome1}
-              onClick={onNavigationmenuHome1Click}
+              onClick={onSearchClick}
             >
               <img className={styles.iconBriefcase} alt="" src="/search.svg" />
               <div className={styles.job}>Search</div>
@@ -112,7 +112,7 @@ const Community = () => {
             </div>
             <div
               className={styles.navigationmenuHome3}
-              onClick={onNavigationmenuHome3Click}
+              onClick={onMyPageClick}
             >
               <img className={styles.iconBriefcase} alt="" src="/user1.svg" />
               <div className={styles.job}>Profile</div>
@@ -120,7 +120,7 @@ const Community = () => {
           </div>
           <div
             className={styles.navigationmenuHome4}
-            onClick={onNavigationmenuHome4Click}
+            onClick={onNewsClick}
           >
             <div className={styles.homelinearWrapper}>
               <img
