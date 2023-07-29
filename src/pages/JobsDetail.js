@@ -1,7 +1,13 @@
 import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import styles from "./JobsDetail.module.css";
+
 const JobsDetail = () => {
+  const location = useLocation();
+  const job = location.state?.job;
+
+  console.log("Location state:", location.state);
+
   const navigate = useNavigate();
 
   const onNavigationmenuHomeClick = useCallback(() => {
@@ -30,7 +36,18 @@ const JobsDetail = () => {
         <p className={styles.p}>{`00님을 위한 `}</p>
         <p className={styles.p}>취업 공고</p>
       </b>
-      <img className={styles.image26Icon} alt="" src="/image-26@2x.png" />
+      {job && (
+        <div>
+          <h3 className={styles.jobAdd}>{job.jobAdd}</h3>
+          <p className={styles.jobField}>{job.jobField}</p>
+          <p className={styles.jobDate}>{job.jobDate}</p>
+          <p className={styles.requirements}>{job.requirements}</p>
+          {job.jobImage && (
+            <img className={styles.jobImage} alt="Job Image" src={job.jobImage} />
+          )}
+        </div>
+      )}
+
       <div className={styles.menu1homelight}>
         <div className={styles.navigationmenuLeftParent}>
           <div className={styles.navigationmenuLeft}>
