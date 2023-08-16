@@ -6,29 +6,28 @@ import axios from 'axios';
 
 const Jobs = () => {
   const [jobs, setJobs] = useState([]);
-  const [currentImageIndex, setCurrentImageIndex] = useState(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     // Flask API로부터 채용 정보를 가져옵니다.
     axios.get("http://localhost:5000/api/jobs").then((response) => {
-      setJobs(response.data); // API가 JSON 형식의 채용 정보 배열을 반환한다고 가정합니다.
+      setJobs(response.data); // API가 JSON 형식의 채용 정보 배열을 반환
     });
   }, []);
 
   // 채용 정보를 표시하는 JSX 코드
   const renderJobs = () => {
-    if (currentImageIndex === null || !jobs[currentImageIndex]) return null;
+    if (!jobs[currentImageIndex]) return null;
 
     const job = jobs[currentImageIndex];
-
+    const imageSource = job.jobImage.replace(/\\/g, '/'); // 이미지 URL 가져오기
+    console.log("Image Source:", imageSource); // 이미지 경로 출력
+    console.log("Nickname from localStorage:", localStorage.getItem("nickname"));
     return (
       <div key={job.id} className={styles.jobCard}>
-        <h3 className={styles.jobAdd}>{job.jobAdd}</h3>
-        <p className={styles.jobField}>{job.jobField}</p>
-        <p className={styles.jobDate}>{job.jobDate}</p>
-        <p className={styles.requirements}>{job.requirements}</p>
+       
         {job.jobImage && (
-          <img className={styles.jobImage} alt="Job Image" src={job.jobImage} />
+          <img className={styles.jobImage} alt="Job Image" src={{imageSource}} />
         )}
       </div>
     );
@@ -63,7 +62,6 @@ const Jobs = () => {
       <div className={styles.jobList}>
         {jobs.length > 0 ? renderJobs() : <p>No job listings found.</p>}
       </div>
-      <div className={styles.div}>화면을 옆으로 넘겨주세요.</div>
       <b className={styles.b}>
         <p className={styles.p}>{`${localStorage.getItem("nickname")}님을 위한 `}</p>
         <p className={styles.p}>취업 공고</p>

@@ -1,10 +1,11 @@
+import React from "react";
 import { useCallback } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import styles from "./JobsDetail.module.css";
 
 const JobsDetail = () => {
   const location = useLocation();
-  const job = location.state?.job;
+  const { job } = location.state;
 
   console.log("Location state:", location.state);
 
@@ -33,19 +34,32 @@ const JobsDetail = () => {
   return (
     <div className={styles.jobsdetail}>
       <b className={styles.b}>
-        <p className={styles.p}>{`${localStorage.getItem("nickname")}님을 위한 `}</p>
-        <p className={styles.p}>취업 공고</p>
+        <p className={styles.p}>{`${localStorage.getItem("nickname")}님을 위한 취업 공고`}</p>
       </b>
+      <br/><br/><br/><br/>
       {job && (
-        <div>
-          <h3 className={styles.jobAdd}>{job.jobAdd}</h3>
-          <p className={styles.jobField}>{job.jobField}</p>
-          <p className={styles.jobDate}>{job.jobDate}</p>
-          <p className={styles.requirements}>{job.requirements}</p>
-          {job.jobImage && (
+        <div className={styles.jobDetailsContainer}>
+        {job.jobImage && (
+          <div className={styles.imageBox}>
             <img className={styles.jobImage} alt="Job Image" src={job.jobImage} />
-          )}
+          </div>
+        )}
+
+        <div className={styles.jobInfoBox}>
+          <h3 className={styles.jobAdd}>
+            <a href={job.jobAdd} target="_blank" rel="noopener noreferrer">
+              {job.jobAdd}
+            </a>
+          </h3>
+          <br/>
+          <p className={styles.jobField}>{job.jobField}</p>
+          <br/>
+          <p className={styles.jobDate}>{job.jobDate}</p>
+          <br/>
+          <p className={styles.requirements}>{job.requirements}</p>
         </div>
+      </div>
+      
       )}
 
       <div className={styles.menu1homelight}>

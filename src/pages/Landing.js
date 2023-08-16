@@ -92,6 +92,7 @@ const Landing = () => {
         document.querySelector('#logout').classList.remove('display_none');
         nickname.classList.remove('display_none');
         thumnail.classList.remove('display_none');
+        localStorage.setItem("nickname", data.nickname);
       }
     } catch (error) {
       console.log(`Error: ${error}`);
