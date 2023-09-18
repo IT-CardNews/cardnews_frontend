@@ -30,7 +30,7 @@ const Landing = () => {
     document.querySelector("#loading").classList.remove('display_none');
 
     try {
-      const response = await axios.get('http://localhost:5000/oauth/url');
+      const response = await axios.get('https://eatit-backend.azurewebsites.net/oauth/url');
       const url = response.data.kakao_oauth_url;
 
       const newWindow = openWindowPopup(url, "카카오톡 로그인");
@@ -57,7 +57,7 @@ const Landing = () => {
   const redirectPage = () => {
     // 만약 /oauth 으로 이동된다면 자동으로 해당 창은 닫습니다.
     const pathname = window.location.pathname;
-    if (pathname.startsWith('http://localhost:5000/oauth')) {
+    if (pathname.startsWith('https://eatit-backend.azurewebsites.net/oauth')) {
       window.close();
     }
   }
@@ -65,7 +65,7 @@ const Landing = () => {
   // 자동 로그인
   const autoLogin = async () => {
     try {
-      const response = await fetch("http://localhost:5000/userinfo", {
+      const response = await fetch("https://eatit-backend.azurewebsites.net/userinfo", {
         headers: { "Content-Type": "application/json" },
         method: "GET"
       });
@@ -103,7 +103,7 @@ const Landing = () => {
   // 토큰 재발급
   const refreshToken = async () => {
     try {
-      const response = await fetch("http://localhost:5000/token/refresh", {
+      const response = await fetch("https://eatit-backend.azurewebsites.net/token/refresh", {
         headers: { "Content-Type": "application/json" },
         method: "GET"
       });
@@ -125,7 +125,7 @@ const Landing = () => {
           return;
         }
 
-        fetch("http://localhost:5000/token/remove", {
+        fetch("https://eatit-backend.azurewebsites.net/token/remove", {
           headers: { "Content-Type": "application/json" },
           method: "GET"
         });
@@ -145,7 +145,7 @@ const Landing = () => {
   // 로그아웃
   const onLogout = async () => {
     try {
-      const response = await fetch("http://localhost:5000/token/remove", {
+      const response = await fetch("https://eatit-backend.azurewebsites.net/token/remove", {
         headers: { "Content-Type": "application/json" },
         method: "GET"
       });
