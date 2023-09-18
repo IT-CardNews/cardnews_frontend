@@ -54,7 +54,6 @@ const CommunityDetail = () => {
         </p>
         <p className={styles.p}> 돌고요.</p>
         <p className={styles.p}></p>
-        <p className={styles.p}>```java</p>
         <p className={styles.p}>{`for (int i = 0; i < letters.length; i++) {
 `}</p>
         <p className={styles.p}> System.out.println(letters[i]);</p>

@@ -29,10 +29,7 @@ const Landing = () => {
   // 카카오 OAuth
   const onKakao = async () => {
     try {
-      const response = await axios.get(
-        "https://eatit-backend.azurewebsites.net/oauth/url"
-      );
-      console.log(response);
+      const response = await axios.get('https://eatit-backend.azurewebsites.net/oauth/url');
       const url = response.data.kakao_oauth_url;
       const newWindow = openWindowPopup(url, "카카오톡 로그인");
       const checkConnect = setInterval(function () {
@@ -59,7 +56,7 @@ const Landing = () => {
   const redirectPage = () => {
     // 만약 /oauth 으로 이동된다면 자동으로 해당 창은 닫습니다.
     const pathname = window.location.pathname;
-    if (pathname.startsWith("https://eatit-backend.azurewebsites.net/oauth")) {
+    if (pathname.startsWith('https://eatit-backend.azurewebsites.net/oauth')) {
       window.close();
     }
   };
@@ -67,13 +64,11 @@ const Landing = () => {
   // 자동 로그인
   const autoLogin = async () => {
     try {
-      const response = await fetch(
-        "https://eatit-backend.azurewebsites.net/userinfo",
-        {
-          headers: { "Content-Type": "application/json" },
-          method: "GET",
-        }
-      );
+
+      const response = await fetch("https://eatit-backend.azurewebsites.net/userinfo", {
+        headers: { "Content-Type": "application/json" },
+        method: "GET"
+      });
       const data = await response.json();
       if (!!data["msg"]) {
         if (data["msg"] === `Missing cookie "access_token_cookie"`) {
@@ -177,13 +172,11 @@ const Landing = () => {
   // 로그아웃
   const onLogout = async () => {
     try {
-      const response = await fetch(
-        "https://eatit-backend.azurewebsites.net/token/remove",
-        {
-          headers: { "Content-Type": "application/json" },
-          method: "GET",
-        }
-      );
+
+      const response = await fetch("https://eatit-backend.azurewebsites.net/token/remove", {
+        headers: { "Content-Type": "application/json" },
+        method: "GET"
+      });
       const data = await response.json();
 
       if (data.result) {

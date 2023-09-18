@@ -20,7 +20,7 @@ const ImageUploadForm = () => {
     formData.append('jobField', jobFieldValue);
     formData.append('requirements', requirementsValue);
 
-    axios.post('http://localhost:5000/upload_job', formData)
+    axios.post('https://eatit-backend.azurewebsites.net/job_upload', formData)
       .then(response => {
         // 업로드 성공 처리
       })

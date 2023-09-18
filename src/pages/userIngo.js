@@ -6,7 +6,7 @@ function UserInfo() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/user") //api 데이터
+      .get("https://eatit-backend.azurewebsites.net/api/user") //api 데이터
       .then((response) => setUser(response.data))
       .catch((error) => console.error("Error:", error));
   }, []);
