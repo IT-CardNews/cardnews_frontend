@@ -20,14 +20,19 @@ const MyPage = () => {
     navigate("/news");
   }, [navigate]);
 
+  
+  const onUserInfo = useCallback(() => {
+    navigate("/userinfo");
+  }, [navigate]);
+
   return (
     <div className={styles.mypage}>
       <b className={styles.myPage}>My Page</b>
-      <div className={styles.iconSettingsOutlineParent}>
+      <div className={styles.iconSettingsOutlineParent} onClick={onUserInfo}>
         <img
           className={styles.iconSettingsOutline}
           alt=""
-          src="https://sahayeon0717.blob.core.windows.net/media/-icon-settings-outline.svg"
+          src="https://itimgstorage.blob.core.windows.net/source/-icon-settings-outline.svg"
         />
         <div className={styles.div}>회원 정보 관리</div>
       </div>
@@ -35,14 +40,14 @@ const MyPage = () => {
         <img
           className={styles.iconBookmarkOutline}
           alt=""
-          src="https://sahayeon0717.blob.core.windows.net/media/-icon-bookmark-outline.svg"
+          src="https://itimgstorage.blob.core.windows.net/source/-icon-bookmark-outline.svg"
         />
         <div className={styles.div}>북마크</div>
       </div>
       <div className={styles.frame}>
         <div className={styles.header}>
           <div className={styles.header1}>
-            <img className={styles.avatarsIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/avatars.svg" />
+            <img className={styles.avatarsIcon} alt="" src="https://itimgstorage.blob.core.windows.net/source/avatars.svg" />
             <div className={styles.text} />
           </div>
           <div className={styles.div2}>{localStorage.getItem("nickname")}</div>
@@ -58,7 +63,7 @@ const MyPage = () => {
               <img
                 className={styles.iconBriefcase}
                 alt=""
-                src="https://sahayeon0717.blob.core.windows.net/media/-icon-briefcase.svg"
+                src="https://itimgstorage.blob.core.windows.net/source/-icon-briefcase.svg"
               />
               <div className={styles.job}>JOB</div>
             </div>
@@ -66,7 +71,7 @@ const MyPage = () => {
               className={styles.navigationmenuHome1}
               onClick={onSearchClick}
             >
-              <img className={styles.iconBriefcase} alt="" src="https://sahayeon0717.blob.core.windows.net/media/search.svg" />
+              <img className={styles.iconBriefcase} alt="" src="https://itimgstorage.blob.core.windows.net/source/search.svg" />
               <div className={styles.job}>Search</div>
             </div>
           </div>
@@ -78,12 +83,12 @@ const MyPage = () => {
               <img
                 className={styles.iconMessages2}
                 alt=""
-                src="https://sahayeon0717.blob.core.windows.net/media/-icon-user.svg"
+                src="https://itimgstorage.blob.core.windows.net/source/-icon-user.svg"
               />
               <div className={styles.community}>Community</div>
             </div>
             <div className={styles.navigationmenuHome3}>
-              <img className={styles.iconUser} alt="" src="https://sahayeon0717.blob.core.windows.net/media/-icon-user.svg" />
+              <img className={styles.iconUser} alt="" src="https://itimgstorage.blob.core.windows.net/source/-icon-user.svg" />
               <div className={styles.job}>Profile</div>
             </div>
           </div>
@@ -95,7 +100,7 @@ const MyPage = () => {
               <img
                 className={styles.iconBriefcase}
                 alt=""
-                src="https://sahayeon0717.blob.core.windows.net/media/homelinear1.svg"
+                src="https://itimgstorage.blob.core.windows.net/source/homelinear1.svg"
               />
             </div>
           </div>
@@ -118,13 +123,13 @@ const MyPage = () => {
           <img
             className={styles.vuesaxoutlinearrowRightIcon}
             alt=""
-            src="https://sahayeon0717.blob.core.windows.net/media/vuesaxoutlinearrowright.svg"
+            src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinearrowright.svg"
           />
         </div>
         <img
           className={styles.vuesaxoutlinedirectInboxIcon}
           alt=""
-          src="https://sahayeon0717.blob.core.windows.net/media/vuesaxoutlinedirectinbox.svg"
+          src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinedirectinbox.svg"
         />
       </div>
       <div className={styles.groupDiv}>
@@ -133,13 +138,13 @@ const MyPage = () => {
           <img
             className={styles.vuesaxoutlinearrowRightIcon}
             alt=""
-            src="https://sahayeon0717.blob.core.windows.net/media/vuesaxoutlinearrowright.svg"
+            src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinearrowright.svg"
           />
         </div>
         <img
           className={styles.vuesaxoutlinedirectInboxIcon}
           alt=""
-          src="https://sahayeon0717.blob.core.windows.net/media/vuesaxoutlineticketdiscount.svg"
+          src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlineticketdiscount.svg"
         />
       </div>
       <div className={styles.groupParent1}>
@@ -148,13 +153,13 @@ const MyPage = () => {
           <img
             className={styles.vuesaxoutlinearrowRightIcon}
             alt=""
-            src="https://sahayeon0717.blob.core.windows.net/media/vuesaxoutlinearrowright.svg"
+            src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinearrowright.svg"
           />
         </div>
         <img
           className={styles.vuesaxoutlinedirectInboxIcon}
           alt=""
-          src="https://sahayeon0717.blob.core.windows.net/media/vuesaxoutlinelovely.svg"
+          src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinelovely.svg"
         />
       </div>
       <div className={styles.groupParent2}>
@@ -163,13 +168,13 @@ const MyPage = () => {
           <img
             className={styles.vuesaxoutlinearrowRightIcon}
             alt=""
-            src="https://sahayeon0717.blob.core.windows.net/media/vuesaxoutlinearrowright.svg"
+            src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinearrowright.svg"
           />
         </div>
         <img
           className={styles.vuesaxoutlinedirectInboxIcon}
           alt=""
-          src="https://sahayeon0717.blob.core.windows.net/media/vuesaxoutlinedocumentprevious.svg"
+          src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinedocumentprevious.svg"
         />
       </div>
       <div className={styles.mypageChild} />

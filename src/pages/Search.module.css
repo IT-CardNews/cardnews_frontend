@@ -58,9 +58,11 @@
 .div,
 .div1 {
   position: absolute;
-  top: 27px;
-  left: 42px;
+  top: 25px;
+  left: 40px;
   letter-spacing: 1.72px;
+  width: 50vw;
+  height: 15px;
 }
 .div1 {
   top: 145px;

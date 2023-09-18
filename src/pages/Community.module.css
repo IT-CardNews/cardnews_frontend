@@ -1,7 +1,4 @@
-.community1 {
-  position: absolute;
-  top: 25px;
-  left: 20px;
+.communityTitle {
   font-size: var(--font-size-5xl);
   letter-spacing: -0.28px;
   color: var(--color-steelblue);
@@ -80,11 +77,20 @@
   font-size: var(--font-size-8xs);
   letter-spacing: -0.02em;
 }
+.writetime {
+  font-size : 10px;
+  color: #A6A6A6;
+}
 .parent {
   top: 0;
   left: 1px;
   width: 79px;
   height: 36px;
+} 
+.boardtitle {
+  font-size: 13px;
+  font-weight: bold;
+
 }
 .p {
   margin: 0;
@@ -306,8 +312,8 @@
   position: absolute;
   top: 721px;
   left: 0;
-  background-color: var(--color-white);
-  width: 375px;
+  background-color: white;
+  width: 100vw;
   height: 91px;
   text-align: center;
   font-size: var(--font-size-xs);
@@ -316,12 +322,13 @@
 }
 .community {
   position: relative;
-  background: linear-gradient(180deg, #fff, #fff);
-  width: 100%;
+  background: #fff;
   height: 812px;
   overflow: hidden;
-  text-align: left;
   font-size: var(--font-size-smi);
   color: var(--color-black);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
   font-family: var(--font-noto-sans-kr);
 }

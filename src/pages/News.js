@@ -1,6 +1,7 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./News.module.css";
+import axios from "axios";
 const News = () => {
   const navigate = useNavigate();
   
@@ -24,6 +25,26 @@ const News = () => {
     navigate("/mypage");
   }, [navigate]);
 
+//new api 가져오기 
+const getNews = async () => {
+  try {
+    const response = await axios.get(
+      "https://eatit-backend.azurewebsites.net/test/cardnews_info"
+    );
+    console.log("뉴스 가져오기 성공: ", response);
+  } catch (error) {
+    console.error("뉴스 가져오기 에러 발생: ", error);
+    if (error.response) {
+      // 서버가 오류응답을 반환한 경우
+      console.error("뉴스 가져오기 서버 응답: ", error.response.data);
+    }
+  }
+};
+
+useEffect(() => {
+  getNews();
+}, []);
+
   return (
     <div className={styles.news}>
       <div className={styles.div}>화면을 옆으로 넘겨주세요.</div>
@@ -45,7 +66,7 @@ const News = () => {
               <img
                 className={styles.iconBriefcase}
                 alt=""
-                src="https://sahayeon0717.blob.core.windows.net/media/-icon-briefcase.svg"
+                src="https://itimgstorage.blob.core.windows.net/source/-icon-briefcase.svg"
               />
               <div className={styles.job}>JOB</div>
             </div>
@@ -53,7 +74,7 @@ const News = () => {
               className={styles.navigationmenuHome1}
               onClick={onSearchClick}
             >
-              <img className={styles.iconBriefcase} alt="" src="https://sahayeon0717.blob.core.windows.net/media/search.svg" />
+              <img className={styles.iconBriefcase} alt="" src="https://itimgstorage.blob.core.windows.net/source/search.svg" />
               <div className={styles.job}>Search</div>
             </div>
           </div>
@@ -65,7 +86,7 @@ const News = () => {
               <img
                 className={styles.iconMessages2}
                 alt=""
-                src="https://sahayeon0717.blob.core.windows.net/media/-icon-messages-25.svg"
+                src="https://itimgstorage.blob.core.windows.net/source/-icon-messages-25.svg"
               />
               <div className={styles.community}>Community</div>
             </div>
@@ -73,13 +94,13 @@ const News = () => {
               className={styles.navigationmenuHome3}
               onClick={onMyPageClick}
             >
-              <img className={styles.iconBriefcase} alt="" src="https://sahayeon0717.blob.core.windows.net/media/user5.svg" />
+              <img className={styles.iconBriefcase} alt="" src="https://itimgstorage.blob.core.windows.net/source/user5.svg" />
               <div className={styles.job}>Profile</div>
             </div>
           </div>
           <div className={styles.navigationmenuHome4}>
             <div className={styles.homeWrapper}>
-              <img className={styles.iconBriefcase} alt="" src="https://sahayeon0717.blob.core.windows.net/media/home1.svg" />
+              <img className={styles.iconBriefcase} alt="" src="https://itimgstorage.blob.core.windows.net/source/home1.svg" />
             </div>
           </div>
         </div>
@@ -89,27 +110,27 @@ const News = () => {
       </div>
       <div className={styles.cardnewsParent}>
         <div className={styles.cardnews}>
-          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-9@2x.png" />
-          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-10@2x.png" />
-          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-11@2x.png" />
-          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-12@2x.png" />
-          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-13@2x.png" />
-          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-14@2x.png" />
-          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-15@2x.png" />
-          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-16@2x.png" />
-          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-17@2x.png" />
-          <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-18@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-9@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-10@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-11@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-12@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-13@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-14@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-15@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-16@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-17@2x.png" />
+          <img className={styles.image9Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-18@2x.png" />
         </div>
-        <img className={styles.frameChild} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-12.svg" />
-        <img className={styles.frameItem} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-13.svg" />
-        <img className={styles.frameInner} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-10.svg" />
-        <img className={styles.groupIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-31.svg" />
-        <img className={styles.frameChild1} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-9.svg" />
-        <img className={styles.frameChild2} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-10.svg" />
-        <img className={styles.frameChild3} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-111.svg" />
-        <img className={styles.frameChild4} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-121.svg" />
-        <img className={styles.frameChild5} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-111.svg" />
-        <img className={styles.frameChild6} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group-10.svg" />
+        <img className={styles.frameChild} alt="" src="https://itimgstorage.blob.core.windows.net/source/group-12.svg" />
+        <img className={styles.frameItem} alt="" src="https://itimgstorage.blob.core.windows.net/source/group-13.svg" />
+        <img className={styles.frameInner} alt="" src="https://itimgstorage.blob.core.windows.net/source/group-10.svg" />
+        <img className={styles.groupIcon} alt="" src="https://itimgstorage.blob.core.windows.net/source/group-31.svg" />
+        <img className={styles.frameChild1} alt="" src="https://itimgstorage.blob.core.windows.net/source/group-9.svg" />
+        <img className={styles.frameChild2} alt="" src="https://itimgstorage.blob.core.windows.net/source/group-10.svg" />
+        <img className={styles.frameChild3} alt="" src="https://itimgstorage.blob.core.windows.net/source/group-111.svg" />
+        <img className={styles.frameChild4} alt="" src="https://itimgstorage.blob.core.windows.net/source/group-121.svg" />
+        <img className={styles.frameChild5} alt="" src="https://itimgstorage.blob.core.windows.net/source/group-111.svg" />
+        <img className={styles.frameChild6} alt="" src="https://itimgstorage.blob.core.windows.net/source/group-10.svg" />
       </div>
     </div>
   );

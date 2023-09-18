@@ -13,7 +13,37 @@ const Jobs = () => {
     axios.get("http://localhost:5000/api/jobs").then((response) => {
       setJobs(response.data); // API가 JSON 형식의 채용 정보 배열을 반환
     });
+    getJobsCard();
   }, []);
+
+
+//취업정보 카드 가져오기
+const getJobsCard = async () => {
+  try {
+    const response = await axios.get(
+      "https://eatit-backend.azurewebsites.net/test/cardnews_info"
+    );
+    console.log("취업정보카드 가져오기 성공: ", response);
+  } catch (error) {
+    console.error("취업 정보카드 가져오기 에러 발생: ", error);
+    if (error.response) {
+      // 서버가 오류응답을 반환한 경우
+      console.error("취업 정보카드 서버 응답: ", error.response.data);
+    }
+  }
+};
+//취업정보 response.data
+// [
+//   {
+//     "id": 0,
+//     "jobAdd": "string",
+//     "jobImage": "string",
+//     "jobDate": "string",
+//     "jobField": "string",
+//     "requirements": "string"
+//   }
+// ]
+
 
   // 채용 정보를 표시하는 JSX 코드
   const renderJobs = () => {
@@ -22,10 +52,7 @@ const Jobs = () => {
     const job = jobs[currentImageIndex];
     const imageSource = job.jobImage.replace(/\\/g, "/"); // 이미지 URL 가져오기
     console.log("Image Source:", imageSource); // 이미지 경로 출력
-    console.log(
-      "Nickname from localStorage:",
-      localStorage.getItem("nickname")
-    );
+  
     return (
       <div key={job.id} className={styles.jobCard}>
         {job.jobImage && (
@@ -94,7 +121,7 @@ const Jobs = () => {
               <img
                 className={styles.iconBriefcase}
                 alt=""
-                src="https://sahayeon0717.blob.core.windows.net/media/-icon-briefcase1.svg"
+                src="https://itimgstorage.blob.core.windows.net/source/-icon-briefcase1.svg"
               />
               <div className={styles.job}>JOB</div>
             </div>
@@ -102,7 +129,7 @@ const Jobs = () => {
               <img
                 className={styles.searchIcon}
                 alt=""
-                src="https://sahayeon0717.blob.core.windows.net/media/search.svg"
+                src="https://itimgstorage.blob.core.windows.net/source/search.svg"
               />
               <div className={styles.job}>Search</div>
             </div>
@@ -112,7 +139,7 @@ const Jobs = () => {
               <img
                 className={styles.iconMessages2}
                 alt=""
-                src="https://sahayeon0717.blob.core.windows.net/media/-icon-messages-23.svg"
+                src="https://itimgstorage.blob.core.windows.net/source/-icon-messages-23.svg"
               />
               <div className={styles.community}>Community</div>
             </div>
@@ -120,7 +147,7 @@ const Jobs = () => {
               <img
                 className={styles.searchIcon}
                 alt=""
-                src="https://sahayeon0717.blob.core.windows.net/media/user3.svg"
+                src="https://itimgstorage.blob.core.windows.net/source/user3.svg"
               />
               <div className={styles.job}>Profile</div>
             </div>
@@ -130,7 +157,7 @@ const Jobs = () => {
               <img
                 className={styles.searchIcon}
                 alt=""
-                src="https://sahayeon0717.blob.core.windows.net/media/homelinear1.svg"
+                src="https://itimgstorage.blob.core.windows.net/source/homelinear1.svg"
               />
             </div>
           </div>
@@ -153,48 +180,48 @@ const Jobs = () => {
           <img
             className={styles.maskGroupIcon}
             alt=""
-            src="https://sahayeon0717.blob.core.windows.net/media/mask-group1@2x.png"
+            src="https://itimgstorage.blob.core.windows.net/source/mask-group1@2x.png"
           />
           <img
             className={styles.maskGroupIcon}
             alt=""
-            src="https://sahayeon0717.blob.core.windows.net/media/mask-group2@2x.png"
+            src="https://itimgstorage.blob.core.windows.net/source/mask-group2@2x.png"
           />
           <img
             className={styles.maskGroupIcon}
             alt=""
-            src="https://sahayeon0717.blob.core.windows.net/media/mask-group3@2x.png"
+            src="https://itimgstorage.blob.core.windows.net/source/mask-group3@2x.png"
           />
           <img
             className={styles.maskGroupIcon}
             alt=""
-            src="https://sahayeon0717.blob.core.windows.net/media/group-67@2x.png"
+            src="https://itimgstorage.blob.core.windows.net/source/group-67@2x.png"
           />
         </div>
         <img
           className={styles.frameItem}
           alt=""
-          src="https://sahayeon0717.blob.core.windows.net/media/group-1.svg"
+          src="https://itimgstorage.blob.core.windows.net/source/group-1.svg"
         />
         <img
           className={styles.frameInner}
           alt=""
-          src="https://sahayeon0717.blob.core.windows.net/media/group-2.svg"
+          src="https://itimgstorage.blob.core.windows.net/source/group-2.svg"
         />
         <img
           className={styles.groupIcon}
           alt=""
-          src="https://sahayeon0717.blob.core.windows.net/media/group-6.svg"
+          src="https://itimgstorage.blob.core.windows.net/source/group-6.svg"
         />
         <img
           className={styles.frameChild1}
           alt=""
-          src="https://sahayeon0717.blob.core.windows.net/media/group-3.svg"
+          src="https://itimgstorage.blob.core.windows.net/source/group-3.svg"
         />
         <img
           className={styles.frameChild2}
           alt=""
-          src="https://sahayeon0717.blob.core.windows.net/media/group-11.svg"
+          src="https://itimgstorage.blob.core.windows.net/source/group-11.svg"
         />
       </div>
     </div>

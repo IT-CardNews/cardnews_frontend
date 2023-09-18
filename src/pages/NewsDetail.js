@@ -27,9 +27,9 @@ const NewsDetail = () => {
         <p className={styles.p}>{`${localStorage.getItem("nickname")}님을 위한 `}</p>
         <p className={styles.p}>오늘의 추천 뉴스</p>
       </b>
-      <img className={styles.image9Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-9@2x.png" />
-      <img className={styles.image11Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-11@2x.png" />
-      <img className={styles.image12Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-12@2x.png" />
+      <img className={styles.image9Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-9@2x.png" />
+      <img className={styles.image11Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-11@2x.png" />
+      <img className={styles.image12Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-12@2x.png" />
       <div className={styles.ai}>
         '초거대 인공지능(AI)'이 정보통신업계 가장 뜨거운 키워드로 떠오르면서
         기업 간 경쟁이 본격화하고 있다. 구글과 마이크로소프트 등 글로벌 빅테크
@@ -47,12 +47,12 @@ const NewsDetail = () => {
               <img
                 className={styles.iconBriefcase}
                 alt=""
-                src="https://sahayeon0717.blob.core.windows.net/media/-icon-briefcase2.svg"
+                src="https://itimgstorage.blob.core.windows.net/source/-icon-briefcase2.svg"
               />
               <div className={styles.job}>JOB</div>
             </div>
             <div className={styles.navigationmenuHome1}>
-              <img className={styles.iconBriefcase} alt="" src="https://sahayeon0717.blob.core.windows.net/media/search.svg" />
+              <img className={styles.iconBriefcase} alt="" src="https://itimgstorage.blob.core.windows.net/source/search.svg" />
               <div className={styles.job}>Search</div>
             </div>
           </div>
@@ -64,7 +64,7 @@ const NewsDetail = () => {
               <img
                 className={styles.iconMessages2}
                 alt=""
-                src="https://sahayeon0717.blob.core.windows.net/media/-icon-messages-24.svg"
+                src="https://itimgstorage.blob.core.windows.net/source/-icon-messages-24.svg"
               />
               <div className={styles.community}>Community</div>
             </div>
@@ -72,13 +72,13 @@ const NewsDetail = () => {
               className={styles.navigationmenuHome3}
               onClick={onMyPageClick}
             >
-              <img className={styles.iconBriefcase} alt="" src="https://sahayeon0717.blob.core.windows.net/media/user4.svg" />
+              <img className={styles.iconBriefcase} alt="" src="https://itimgstorage.blob.core.windows.net/source/user4.svg" />
               <div className={styles.job}>Profile</div>
             </div>
           </div>
           <div className={styles.navigationmenuHome4}>
             <div className={styles.homeWrapper} onClick={onFrameContainerClick}>
-              <img className={styles.iconBriefcase} alt="" src="https://sahayeon0717.blob.core.windows.net/media/home.svg" />
+              <img className={styles.iconBriefcase} alt="" src="https://itimgstorage.blob.core.windows.net/source/home.svg" />
             </div>
           </div>
         </div>

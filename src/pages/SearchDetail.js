@@ -27,7 +27,7 @@ const SearchDetail = () => {
   return (
     <div className={styles.searchdetail}>
       <div className={styles.card}>
-        <img className={styles.icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/001@2x.png" />
+        <img className={styles.icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/001@2x.png" />
         <div className={styles.frameParent}>
           <div className={styles.gptWrapper}>
             <div className={styles.gpt}>
@@ -39,10 +39,10 @@ const SearchDetail = () => {
           </div>
         </div>
         <div className={styles.button} />
-        <img className={styles.buttonIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/button.svg" />
+        <img className={styles.buttonIcon} alt="" src="https://itimgstorage.blob.core.windows.net/source/button.svg" />
       </div>
       <div className={styles.card1}>
-        <img className={styles.icon1} alt="" src="https://sahayeon0717.blob.core.windows.net/media/job_card.png" />
+        <img className={styles.icon1} alt="" src="https://itimgstorage.blob.core.windows.net/source/job_card.png" />
         <div className={styles.frameParent}>
           <div className={styles.gptWrapper}>
             <div className={styles.gpt}>엔지니어 채용 공고</div>
@@ -51,7 +51,7 @@ const SearchDetail = () => {
             프론트엔드 개발 환경 개선과 디자인 시스템 제작
           </div>
         </div>
-        <img className={styles.buttonIcon1} alt="" src="https://sahayeon0717.blob.core.windows.net/media/button1.svg" />
+        <img className={styles.buttonIcon1} alt="" src="https://itimgstorage.blob.core.windows.net/source/button1.svg" />
       </div>
       <div className={styles.menu1homelight}>
         <div className={styles.navigationmenuLeftParent}>
@@ -63,7 +63,7 @@ const SearchDetail = () => {
               <img
                 className={styles.iconBriefcase}
                 alt=""
-                src="https://sahayeon0717.blob.core.windows.net/media/-icon-briefcase.svg"
+                src="https://itimgstorage.blob.core.windows.net/source/-icon-briefcase.svg"
               />
               <div className={styles.job}>JOB</div>
             </div>
@@ -74,7 +74,7 @@ const SearchDetail = () => {
               <img
                 className={styles.iconSearchNormal1}
                 alt=""
-                src="https://sahayeon0717.blob.core.windows.net/media/-icon-search-normal-1.svg"
+                src="https://itimgstorage.blob.core.windows.net/source/-icon-search-normal-1.svg"
               />
               <div className={styles.job}>Search</div>
             </div>
@@ -87,7 +87,7 @@ const SearchDetail = () => {
               <img
                 className={styles.iconMessages2}
                 alt=""
-                src="https://sahayeon0717.blob.core.windows.net/media/-icon-messages-26.svg"
+                src="https://itimgstorage.blob.core.windows.net/source/-icon-messages-26.svg"
               />
               <div className={styles.community}>Community</div>
             </div>
@@ -107,7 +107,7 @@ const SearchDetail = () => {
               <img
                 className={styles.iconBriefcase}
                 alt=""
-                src="https://sahayeon0717.blob.core.windows.net/media/homelinear1.svg"
+                src="https://itimgstorage.blob.core.windows.net/source/homelinear1.svg"
               />
             </div>
           </div>
@@ -119,8 +119,8 @@ const SearchDetail = () => {
       <div className={styles.searchdetailChild} />
       <div className={styles.searchdetailInner} />
       <div className={styles.div2}>회사, 사람, 키워드로 검색</div>
-      <img className={styles.icon2} alt="" src="https://sahayeon0717.blob.core.windows.net/media/icon.svg" />
-      <img className={styles.searchIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/search-icon.svg" />
+      <img className={styles.icon2} alt="" src="https://itimgstorage.blob.core.windows.net/source/icon.svg" />
+      <img className={styles.searchIcon} alt="" src="https://itimgstorage.blob.core.windows.net/source/search-icon.svg" />
     </div>
   );
 };

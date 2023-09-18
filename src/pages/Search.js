@@ -24,6 +24,12 @@ const Search = () => {
     navigate("/searchdetail");
   }, [navigate]);
 
+const now = new Date();
+
+// 한국 시간 변환
+const koreaTime = new Date(now.getTime() + (-540 - now.getTimezoneOffset()) * 60000);
+
+
   return (
     <div className={styles.search}>
       <div className={styles.homeBarmini}>
@@ -31,11 +37,7 @@ const Search = () => {
       </div>
       <div className={styles.communityParent}>
         <b className={styles.community}>community</b>
-        <img
-          className={styles.iconMessageCircleOutline}
-          alt=""
-          src="https://sahayeon0717.blob.core.windows.net/media/-icon-message-circle-outline.svg"
-        />
+
       </div>
       <div className={styles.searchChild} />
       <div className={styles.homeBarmini}>
@@ -43,10 +45,15 @@ const Search = () => {
       </div>
       <div className={styles.searchChild} />
       <div className={styles.searchInner} />
-      <div className={styles.div}>회사, 사람, 키워드로 검색</div>
-      <div className={styles.div1}>2023.07.07 오전 09:10 기준</div>
+     <div className={styles.div}>
+     <input 
+      style={{ fontSize: "11px", marginLeft: "5px",paddingLeft: "15px",border: 0, borderRadius: "15px", width:"50vw", height:"20px", outline: "none", backgroundColor: "rgb(233, 233, 233)"}}
+      type="text" 
+      placeholder="회사, 사람, 키워드로 검색" 
+    />
+     </div>
+      <div className={styles.div1}>{koreaTime.toLocaleString()}</div>
       <div className={styles.rankig}>
-        <img className={styles.rankigChild} alt="" src="/line-11.svg" />
         <div className={styles.react}>
           <span className={styles.span}>
             <b>1</b>
@@ -58,7 +65,6 @@ const Search = () => {
             <span>react</span>
           </span>
         </div>
-        <img className={styles.rankigItem} alt="" src="/line-12.svg" />
         <div className={styles.nodejs}>
           <span className={styles.span}>
             <b>6</b>
@@ -70,7 +76,6 @@ const Search = () => {
             <span>node.js</span>
           </span>
         </div>
-        <img className={styles.rankigInner} alt="" src="/line-11.svg" />
         <div className={styles.reactNextJsContainer}>
           <span className={styles.span}>
             <b>2</b>
@@ -82,7 +87,6 @@ const Search = () => {
             <span>react next. js</span>
           </span>
         </div>
-        <img className={styles.lineIcon} alt="" src="/line-12.svg" />
         <div className={styles.div2}>
           <span className={styles.span}>
             <b>7</b>
@@ -94,7 +98,6 @@ const Search = () => {
             <span>프론트엔드</span>
           </span>
         </div>
-        <img className={styles.rankigChild1} alt="" src="/line-11.svg" />
         <div className={styles.spring}>
           <span className={styles.span}>
             <b>3</b>
@@ -106,7 +109,6 @@ const Search = () => {
             <span>spring</span>
           </span>
         </div>
-        <img className={styles.rankigChild2} alt="" src="/line-12.svg" />
         <div className={styles.chatGpt}>
           <span className={styles.span}>
             <b>8</b>
@@ -118,7 +120,6 @@ const Search = () => {
             <span>chat GPT</span>
           </span>
         </div>
-        <img className={styles.rankigChild3} alt="" src="/line-11.svg" />
         <div className={styles.div3}>
           <span className={styles.span}>
             <b>4</b>
@@ -130,7 +131,6 @@ const Search = () => {
             <span>개발자 취업 공고</span>
           </span>
         </div>
-        <img className={styles.rankigChild4} alt="" src="/line-12.svg" />
         <div className={styles.ai}>
           <span className={styles.span}>
             <b>9</b>
@@ -142,7 +142,6 @@ const Search = () => {
             <span>AI</span>
           </span>
         </div>
-        <img className={styles.rankigChild5} alt="" src="/line-11.svg" />
         <div className={styles.div4}>
           <span className={styles.span}>
             <b>5</b>
@@ -154,7 +153,6 @@ const Search = () => {
             <span>부트캠프</span>
           </span>
         </div>
-        <img className={styles.rankigChild6} alt="" src="/line-12.svg" />
         <div className={styles.div5}>
           <span className={styles.span}>
             <b>10</b>
@@ -167,11 +165,15 @@ const Search = () => {
           </span>
         </div>
       </div>
-      <img className={styles.searchIcon} alt="" src="/search-icon.svg" />
+
+      <img className={styles.searchIcon} src="https://itimgstorage.blob.core.windows.net/source/search-icon.svg" />
       <b className={styles.b}>
         <p className={styles.p}>다른 사람들이</p>
         <p className={styles.p}>많이 검색하고 있어요!</p>
       </b>
+
+      {/* -------------하단바------------ */}
+
       <div className={styles.menu1homelight}>
         <div className={styles.navigationmenuLeftParent}>
           <div className={styles.navigationmenuLeft}>
@@ -179,14 +181,14 @@ const Search = () => {
               className={styles.navigationmenuHome}
               onClick={onJobsClick}
             >
-              <img className={styles.groupIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/group.svg" />
+              <img className={styles.groupIcon} alt="" src="https://itimgstorage.blob.core.windows.net/source/group.svg" />
               <div className={styles.job}>JOB</div>
             </div>
             <div className={styles.navigationmenuHome1}>
               <img
                 className={styles.iconSearchNormal1}
                 alt=""
-                src="https://sahayeon0717.blob.core.windows.net/media/-icon-search-normal-1.svg"
+                src="https://itimgstorage.blob.core.windows.net/source/-icon-search-normal-1.svg"
               />
               <div className={styles.job}>Search</div>
             </div>
@@ -199,7 +201,7 @@ const Search = () => {
               <img
                 className={styles.iconMessages2}
                 alt=""
-                src="https://sahayeon0717.blob.core.windows.net/media/-icon-messages-2.svg"
+                src="https://itimgstorage.blob.core.windows.net/source/-icon-messages-2.svg"
               />
               <div className={styles.community1}>Community</div>
             </div>
@@ -207,7 +209,7 @@ const Search = () => {
               className={styles.navigationmenuHome3}
               onClick={onMyPageClick}
             >
-              <img className={styles.userIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/user.svg" />
+              <img className={styles.userIcon} alt="" src="https://itimgstorage.blob.core.windows.net/source/user.svg" />
               <div className={styles.job}>Profile</div>
             </div>
           </div>
@@ -216,7 +218,7 @@ const Search = () => {
             onClick={onNewsClick}
           >
             <div className={styles.homelinearWrapper}>
-              <img className={styles.userIcon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/homelinear.svg" />
+              <img className={styles.userIcon} alt="" src="https://itimgstorage.blob.core.windows.net/source/homelinear.svg" />
             </div>
           </div>
         </div>
@@ -224,7 +226,7 @@ const Search = () => {
       <img
         className={styles.icon}
         alt=""
-        src="/icon.svg"
+        src="https://itimgstorage.blob.core.windows.net/source/icon.svg"
         onClick={onIconClick}
       />
     </div>
