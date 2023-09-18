@@ -1,3 +1,6 @@
+/* Landing.module.css */
+
+
 .icon {
   position: absolute;
   top: 156px;
@@ -6,6 +9,7 @@
   height: 375px;
   object-fit: cover;
 }
+
 .landingChild {
   position: absolute;
   top: 601px;
@@ -15,18 +19,20 @@
   height: 50px;
   cursor: pointer;
 }
+
 .eatIt {
   position: absolute;
   top: 608px;
-  left: 98px;
+  left: 85px;
   letter-spacing: -0.28px;
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 190px;
+  width: 210px;
   height: 28px;
 }
+
 .landing {
   position: relative;
   background: linear-gradient(180deg, #83a4d4, #b6fbff 92.6%);
@@ -38,3 +44,53 @@
   color: var(--color-white);
   font-family: var(--font-noto-sans);
 }
+
+.kakao_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 6px;
+  width: 80%;
+  max-width: 240px;
+  height: 45px;
+  border-radius: 6px;
+  background-color: #FFDE02;
+  color: #000000;
+  cursor: pointer;
+}
+.kakao_button > img {
+  height: 28px;
+}
+.kakao_button > span {
+  margin-left: 6px;
+  line-height: 32px;
+}
+
+.thumnail {
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+  margin: 20px 0;
+}
+
+.nickname {
+  color: hsla(0,0%,100%,.6);
+  margin: 20px 0 40px 0;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 6px;
+  width: 80%;
+  max-width: 240px;
+  height: 45px;
+  border-radius: 6px;
+  background-color: #0ebb8d;
+  color: #000000;
+  cursor: pointer;
+}
+

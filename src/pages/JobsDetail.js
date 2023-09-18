@@ -1,7 +1,14 @@
+import React from "react";
 import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import styles from "./JobsDetail.module.css";
+
 const JobsDetail = () => {
+  const location = useLocation();
+  const { job } = location.state;
+
+  console.log("Location state:", location.state);
+
   const navigate = useNavigate();
 
   const onJobsClick = useCallback(() => {
@@ -27,10 +34,9 @@ const JobsDetail = () => {
   return (
     <div className={styles.jobsdetail}>
       <b className={styles.b}>
-        <p className={styles.p}>{`${localStorage.getItem("nickname")}님을 위한 `}</p>
-        <p className={styles.p}>취업 공고</p>
+        <p className={styles.p}>{`${localStorage.getItem("nickname")}님을 위한 취업 공고`}</p>
       </b>
-      <img className={styles.image26Icon} alt="" src="https://sahayeon0717.blob.core.windows.net/media/image-26@2x.png" />
+
       <div className={styles.menu1homelight}>
         <div className={styles.navigationmenuLeftParent}>
           <div className={styles.navigationmenuLeft}>

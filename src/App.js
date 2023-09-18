@@ -16,6 +16,7 @@ import CommunityDetail from "./pages/CommunityDetail";
 import Landing from "./pages/Landing";
 import MyPage from "./pages/MyPage";
 import { useEffect } from "react";
+import ImageUploadForm from "./pages/ImageUploadForm";
 
 function App() {
   const action = useNavigationType();
@@ -77,6 +78,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/upload":
+        title = "";
+        metaDescription = "";
+        break;
     }
 
     if (title) {
@@ -107,6 +112,7 @@ function App() {
       <Route path="/landing" element={<Landing />} />
       <Route path="/mypage" element={<MyPage />} />
       <Route path="/search" element={<Search />} />
+      <Route path="/upload" element={<ImageUploadForm />} />
     </Routes>
   );
 }
