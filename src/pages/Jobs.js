@@ -10,7 +10,7 @@ const Jobs = () => {
 
   useEffect(() => {
     // Flask API로부터 채용 정보를 가져옵니다.
-    axios.get("http://localhost:5000/api/jobs").then((response) => {
+    axios.get("https://eatit-backend.azurewebsites.net/test/job_info").then((response) => {
       setJobs(response.data); // API가 JSON 형식의 채용 정보 배열을 반환
     });
   }, []);
