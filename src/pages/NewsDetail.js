@@ -28,8 +28,7 @@ const NewsDetail = () => {
         <p className={styles.p}>오늘의 추천 뉴스</p>
       </b>
       <img className={styles.image9Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-9@2x.png" />
-      <img className={styles.image11Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-11@2x.png" />
-      <img className={styles.image12Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-12@2x.png" />
+      
       <div className={styles.ai}>
         '초거대 인공지능(AI)'이 정보통신업계 가장 뜨거운 키워드로 떠오르면서
         기업 간 경쟁이 본격화하고 있다. 구글과 마이크로소프트 등 글로벌 빅테크

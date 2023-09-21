@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Search.module.css";
 const Search = () => {
@@ -29,6 +29,22 @@ const now = new Date();
 // 한국 시간 변환
 const koreaTime = new Date(now.getTime() + (-540 - now.getTimezoneOffset()) * 60000);
 
+const getSearch = async () => {
+  try {
+    const response = await axios.get(
+      "https://eatit-backend.azurewebsites.net/test/job_search" ,"프론트"
+    );
+    console.log("서치 가져오기 성공: ", response);
+  } catch (error) {
+    console.error("서치 가져오기 에러 발생: ", error);
+    if (error.response) {
+      // 서버가 오류응답을 반환한 경우
+      console.error("서치 가져오기 서버 응답: ", error.response.data);
+    }
+  }
+};
+
+getSearch();
 
   return (
     <div className={styles.search}>

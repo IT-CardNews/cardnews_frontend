@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import styles from "./Jobs.module.css";
 import axios from "axios";
 
-const JobsDetail = () => {
+const JobsDetail2 = () => {
   const navigate = useNavigate();
 
   const onJobsClick = useCallback(() => {
@@ -29,7 +29,6 @@ const JobsDetail = () => {
 
 let imgUrl = "";
 let jobField = "";
-let jobAdd = "";
 
   const getCardNews = async (id) => {
     try {
@@ -46,7 +45,7 @@ let jobAdd = "";
   };
 
   useEffect(() => {
-    getCardNews();
+    // getCardNews();
   }, []);
 
   return (
@@ -60,22 +59,17 @@ let jobAdd = "";
       <img
             className={styles.maskGroupIcon}
             alt=""
-            src="https://itimgstorage.blob.core.windows.net/source/mask-group1@2x.png"
+            src="https://itimgstorage.blob.core.windows.net/source/jobCard1.png"
           />
           <img
             className={styles.maskGroupIcon}
             alt=""
-            src="https://itimgstorage.blob.core.windows.net/source/mask-group2@2x.png"
+            src="https://itimgstorage.blob.core.windows.net/source/jobCard2.png"
           />
           <img
             className={styles.maskGroupIcon}
             alt=""
-            src="https://itimgstorage.blob.core.windows.net/source/mask-group3@2x.png"
-          />
-          <img
-            className={styles.maskGroupIcon}
-            alt=""
-            src="https://itimgstorage.blob.core.windows.net/source/group-67@2x.png"
+            src="https://itimgstorage.blob.core.windows.net/source/jobCard3.png"
           />
         </div>
 
@@ -89,7 +83,7 @@ let jobAdd = "";
                 alt=""
                 src="https://itimgstorage.blob.core.windows.net/source/-icon-briefcase1.svg"
               />
-              <div className={styles.job}>JOB</div>
+              <div className={styles.job} onClick={onJobsClick}>JOB</div>
             </div>
             <div className={styles.navigationmenuHome1} onClick={onSearchClick}>
               <img
@@ -129,5 +123,7 @@ let jobAdd = "";
           </div>
         </div>
       </div>
-      </div>)}
-export default JobsDetail;
+      </div>
+      )
+    }
+export default JobsDetail2;

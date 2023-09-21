@@ -13,7 +13,7 @@
 .image26Icon {
   top: 127px;
   left: 0;
-  width: 375px;
+  width: 100vw;
   height: 1620.63px;
   object-fit: cover;
 }
@@ -142,8 +142,8 @@
   bottom: -2px;
   left: calc(50% - 187.5px);
   background-color: var(--color-white);
-  width: 375px;
-  height: 91px;
+  width: 100vw;
+  height: 150px;
   text-align: center;
   font-size: var(--font-size-xs);
   color: var(--color-royalblue);
@@ -162,14 +162,14 @@
   position: absolute;
   bottom: 0;
   left: calc(50% - 187.5px);
-  width: 375px;
+  width:100vw;
   height: 34px;
 }
 .jobsdetail {
   position: relative;
   background: linear-gradient(180deg, #83a4d4, #b6fbff);
   width: 100%;
-  height: 1879px;
+  height: 100vh;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-5xl);

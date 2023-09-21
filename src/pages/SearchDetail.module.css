@@ -28,6 +28,7 @@
   position: relative;
   font-size: var(--font-size-base);
   line-height: 24px;
+  margin-bottom: 40px;
 }
 .frameParent {
   display: flex;
@@ -58,7 +59,7 @@
   top: 96px;
   left: 22px;
   width: 331px;
-  display: flex;
+  display: flow-root;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -213,14 +214,22 @@
 }
 .homeBarmini,
 .menu1homelight {
-  position: absolute;
+  position: fixed;
+  bottom: 0;
+  top: 721px;
   left: 0;
-  width: 375px;
+  background-color: white;
+  width: 100vw;
+  height: 100%;
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--color-lightsteelblue);
+  font-family: var(--font-sf-pro-text);
 }
 .menu1homelight {
   top: 976px;
   background-color: var(--color-white);
-  height: 91px;
+  height: 150px;
   text-align: center;
   font-size: var(--font-size-xs);
   color: var(--color-lightsteelblue);
@@ -281,7 +290,7 @@
   position: relative;
   background: linear-gradient(180deg, #83a4d4, #b6fbff);
   width: 100%;
-  height: 1067px;
+  height:100vh;
   overflow: hidden;
   text-align: left;
   font-size: var(--h6-semibold-size);

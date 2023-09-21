@@ -1,23 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useCallback, useEffect } from "react";
 import axios from "axios";
 import styles from "./Landing.module.css";
+import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
-  useEffect(() => {
-    // componentDidMount 역할을 하는 부분
-    document.querySelector("#kakao").addEventListener("click", onKakao);
-    document.querySelector("#logout").addEventListener("click", onLogout);
+  const navigate = useNavigate();
+  // useEffect(() => {
+  //   // componentDidMount 역할을 하는 부분
+  //   document.querySelector("#kakao").addEventListener("click", onKakao);
+  //   document.querySelector("#logout").addEventListener("click", onLogout);
 
-    autoLogin();
+  //   autoLogin();
 
-    redirectPage();
+  //   redirectPage();
 
-    // componentWillUnmount 역할을 하는 부분
-    return () => {
-      document.querySelector("#kakao").removeEventListener("click", onKakao);
-      document.querySelector("#logout").removeEventListener("click", onLogout);
-    };
-  }, []);
+  //   // componentWillUnmount 역할을 하는 부분
+  //   return () => {
+  //     document.querySelector("#kakao").removeEventListener("click", onKakao);
+  //     document.querySelector("#logout").removeEventListener("click", onLogout);
+  //   };
+  // }, []);
 
   // 팝업창 열기
   const openWindowPopup = (url, name) => {
@@ -25,6 +27,10 @@ const Landing = () => {
       "top=10, left=10, width=500, height=600, status=no, menubar=no, toolbar=no, resizable=no";
     return window.open(url, name, options);
   };
+  const onClick = useCallback(() => {
+    navigate("/interest");
+  }, [navigate]);
+
 
   // 카카오 OAuth
   const onKakao = async () => {
@@ -99,7 +105,7 @@ const Landing = () => {
       return;
     }
   };
-
+localStorage.setItem("nickname", "조영서");
   // 토큰 재발급
   const refreshToken = async () => {
     try {
@@ -193,7 +199,7 @@ const Landing = () => {
 
   return (
     <>
-      <div onClick={onKakao} id="kakao" className={styles.landing}>
+      <div onClick={onClick} id="kakao" className={styles.landing}>
         <img
           className={styles.icon}
           alt=""

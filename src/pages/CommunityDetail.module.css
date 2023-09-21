@@ -11,7 +11,7 @@
   position: absolute;
   top: 778px;
   left: -1px;
-  width: 375px;
+  width: 100vw;
   height: 34px;
 }
 .community {
@@ -532,7 +532,7 @@
   top: 1949px;
   left: 2px;
   background-color: var(--color-white);
-  width: 375px;
+  width:100vw;
   height: 91px;
   text-align: center;
   font-size: var(--font-size-xs);

@@ -17,6 +17,9 @@ import Landing from "./pages/Landing";
 import MyPage from "./pages/MyPage";
 import { useEffect } from "react";
 import ImageUploadForm from "./pages/ImageUploadForm";
+import Writeboard from "./pages/Writeboard.jsx";
+import JobsDetail2 from "./pages/JobsDetail2";
+import Jobs2 from "./pages/Jobs2";
 
 function App() {
   const action = useNavigationType();
@@ -39,48 +42,52 @@ function App() {
         metaDescription = "";
         break;
       case "/community":
-        title = "";
+        title = "커뮤니티";
         metaDescription = "";
         break;
       case "/jobsdetail":
-        title = "";
+        title = "취업공고상세";
         metaDescription = "";
         break;
       case "/jobs":
-        title = "";
+        title = "취업공고";
         metaDescription = "";
         break;
       case "/newsdetail":
-        title = "";
+        title = "뉴스 상세";
         metaDescription = "";
         break;
       case "/news":
-        title = "";
+        title = "뉴스";
         metaDescription = "";
         break;
       case "/interest":
         title = "";
-        metaDescription = "";
+        metaDescription = "관심분야 선택";
         break;
       case "/searchdetail":
-        title = "";
+        title = "검색결과";
         metaDescription = "";
         break;
       case "/communitydetail":
-        title = "";
+        title = "커뮤니티";
         metaDescription = "";
         break;
       case "/landing":
         title = "";
-        metaDescription = "";
+        metaDescription = "카카오톡 로그인";
         break;
       case "/mypage":
         title = "";
-        metaDescription = "";
+        metaDescription = "마이페이지";
         break;
       case "/upload":
         title = "";
         metaDescription = "";
+        break;
+      case "/writeboard":
+        title = "";
+        metaDescription = "글쓰기";
         break;
     }
 
@@ -104,6 +111,7 @@ function App() {
       <Route path="/community" element={<Community />} />
       <Route path="/jobsdetail" element={<JobsDetail />} />
       <Route path="/jobs" element={<Jobs />} />
+      <Route path="/jobs2" element={<Jobs2 />} />
       <Route path="/newsdetail" element={<NewsDetail />} />
       <Route path="/news" element={<News />} />
       <Route path="/interest" element={<Interest />} />
@@ -113,6 +121,8 @@ function App() {
       <Route path="/mypage" element={<MyPage />} />
       <Route path="/search" element={<Search />} />
       <Route path="/upload" element={<ImageUploadForm />} />
+      <Route path="/write" element={<Writeboard />} />
+      <Route path=" /jobsdetail2" element={<JobsDetail2 />} />
     </Routes>
   );
 }

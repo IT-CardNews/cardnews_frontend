@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/62c8b2cb-c574-430d-ac4c-9ea68e622e7f/resourceGroups/eatitFront_group/providers/Microsoft.Web/sites/eatitFront",
+    "appService.deploySubpath": "."
+}

@@ -7,7 +7,7 @@ const Interest = () => {
   const navigate = useNavigate();
 
   const onClick = useCallback(() => {
-    navigate("/news");
+    navigate("/jobs");
   }, [navigate]);
 
 
@@ -19,7 +19,7 @@ const Interest = () => {
       <img className={styles.image5Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-5@2x.png" />
       <img className={styles.image4Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-4@2x.png" />
       <img className={styles.image3Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-3@2x.png" />
-      <img className={styles.image2Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/user_pic.png" />
+      <img className={styles.image2Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-2@2x.png" />
       <img className={styles.image1Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-1@2x.png" />
       <div className={styles.frameParent}>
         <div className={styles.wrapper}>

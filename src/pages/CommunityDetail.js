@@ -54,6 +54,7 @@ const CommunityDetail = () => {
         </p>
         <p className={styles.p}> 돌고요.</p>
         <p className={styles.p}></p>
+        <p className={styles.p}>```java</p>
         <p className={styles.p}>{`for (int i = 0; i < letters.length; i++) {
 `}</p>
         <p className={styles.p}> System.out.println(letters[i]);</p>
@@ -102,7 +103,7 @@ const CommunityDetail = () => {
         <p className={styles.p}></p>
         <p
           className={styles.p}
-        >{`이번 글에서는 파이썬에서 \`range()\` 함수가 도대체 뭐길래 `}</p>
+        >{`이번 글에서는 파이썬에서 \`range()\` 함수가 도대체 뭐길래 `}</p>
         <p
           className={styles.p}
         >{`이렇게 \`for\` 루프에서 자주 보이는지 자세히 파해쳐보도록 `}</p>

@@ -4,7 +4,7 @@ import styles from "./Jobs.module.css";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const Jobs = () => {
+const Jobs2 = () => {
   const [jobs, setJobs] = useState([]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -19,7 +19,6 @@ const Jobs = () => {
         "https://eatit-backend.azurewebsites.net/test/job_info"
       );
       console.log("취업정보카드 가져오기 성공: ", response);
-      console.log("취업정보카드 가져오기 성공: ", response.data.jobImage);
     } catch (error) {
       console.error("취업 정보카드 가져오기 에러 발생: ", error);
       if (error.response) {
@@ -71,7 +70,7 @@ const Jobs = () => {
   const onGroupContainerClick = useCallback(
     (index) => {
       const selectedJob = jobs[index];
-      navigate("/jobsdetail", { state: { job: selectedJob } });
+      navigate("/jobsdetail2", { state: { job: selectedJob } });
     },
     [navigate, jobs]
   );
@@ -81,7 +80,7 @@ const Jobs = () => {
   }, [navigate]);
 
   const onNext = useCallback(() => {
-    navigate("/jobs2");
+    navigate("/jobs");
   });
 
   const onCommuClick = useCallback(() => {
@@ -91,11 +90,13 @@ const Jobs = () => {
   const onNewsClick = useCallback(() => {
     navigate("/news");
   }, [navigate]);
-
-  const onjobsDetail2 = useCallback(() => {
-    navigate("/news");
+  
+  const onjobsDetail1 = useCallback(() => {
+    navigate("/jobsdetail2");
   }, [navigate]);
 
+
+  
   return (
     <div className={styles.jobs}>
       <div className={styles.jobList}>
@@ -111,9 +112,7 @@ const Jobs = () => {
         className={styles.rectangleParent}
         onClick={() => onGroupContainerClick(currentImageIndex)}>
         <div className={styles.groupChild} />
-        <div onClick={onjobsDetail2} className={styles.click}>
-          Click
-        </div>
+        <div onClick={onjobsDetail1} className={styles.click}>Click</div>
       </div>
       <div className={styles.rectangleParent2} onClick={handleNextClick}>
         <div className={styles.groupChild} />
@@ -187,24 +186,20 @@ const Jobs = () => {
           <img
             className={styles.maskGroupIcon}
             alt=""
-            src="https://itimgstorage.blob.core.windows.net/source/mask-group1@2x.png"
+            src="https://itimgstorage.blob.core.windows.net/source/jobCard1.png"
           />
           <img
             className={styles.maskGroupIcon}
             alt=""
-            src="https://itimgstorage.blob.core.windows.net/source/mask-group2@2x.png"
+            src="https://itimgstorage.blob.core.windows.net/source/jobCard2.png"
           />
           <img
             className={styles.maskGroupIcon}
             alt=""
-            src="https://itimgstorage.blob.core.windows.net/source/mask-group3@2x.png"
-          />
-          <img
-            className={styles.maskGroupIcon}
-            alt=""
-            src="https://itimgstorage.blob.core.windows.net/source/group-67@2x.png"
+            src="https://itimgstorage.blob.core.windows.net/source/jobCard3.png"
           />
         </div>
+        {/* -------------------------------------------- */}
         <img
           className={styles.frameItem}
           alt=""
@@ -220,19 +215,9 @@ const Jobs = () => {
           alt=""
           src="https://itimgstorage.blob.core.windows.net/source/group-6.svg"
         />
-        <img
-          className={styles.frameChild1}
-          alt=""
-          src="https://itimgstorage.blob.core.windows.net/source/group-3.svg"
-        />
-        <img
-          className={styles.frameChild2}
-          alt=""
-          src="https://itimgstorage.blob.core.windows.net/source/group-11.svg"
-        />
       </div>
     </div>
   );
 };
 
-export default Jobs;
+export default Jobs2;

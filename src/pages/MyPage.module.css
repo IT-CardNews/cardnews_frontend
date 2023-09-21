@@ -218,14 +218,14 @@
   gap: var(--gap-42xl);
 }
 .menu1homelight {
-  position: absolute;
+  position: fixed;
   top: 721px;
-  left: 0;
+  /* left: ; */
   background-color: var(--color-white);
-  width: 375px;
-  height: 91px;
+  width: 100vw;
+  height: 150px;
   text-align: center;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-xs);       
   color: var(--color-lightsteelblue);
   font-family: var(--font-sf-pro-text);
 }
@@ -242,7 +242,7 @@
   position: absolute;
   top: 778px;
   left: 0;
-  width: 375px;
+  width: 100vw;
   height: 34px;
 }
 .aboutEatit,
@@ -338,7 +338,7 @@
   position: relative;
   background: linear-gradient(180deg, #83a4d4, #b6fbff);
   width: 100%;
-  height: 812px;
+  height: 100vh;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-lg);
