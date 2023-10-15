@@ -95,7 +95,7 @@ const Jobs = () => {
   const onjobsDetail2 = useCallback(() => {
     navigate("/news");
   }, [navigate]);
-
+  localStorage.setItem("nickname", "양하연");
   return (
     <div className={styles.jobs}>
       <div className={styles.jobList}>

@@ -12,7 +12,7 @@ function Writeboard() {
       localStorage.setItem('posts', JSON.stringify(posts));
       alert('등록되었습니다');
       navigate('/community');
-    };
+    }; 
 
     const onCancle = () => {
       alert('작성을 취소하시겠습니까?');

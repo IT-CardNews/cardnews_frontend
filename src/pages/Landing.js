@@ -34,6 +34,8 @@ const Landing = () => {
 
   // 카카오 OAuth
   const onKakao = async () => {
+localStorage.setItem("nickname", "양하연");
+
     try {
       const response = await axios.get('https://eatit-backend.azurewebsites.net/oauth/url');
       const url = response.data.kakao_oauth_url;
@@ -105,7 +107,6 @@ const Landing = () => {
       return;
     }
   };
-localStorage.setItem("nickname", "조영서");
   // 토큰 재발급
   const refreshToken = async () => {
     try {
@@ -150,6 +151,24 @@ localStorage.setItem("nickname", "조영서");
     }
   };
 
+
+
+    const setNickname = async () => {
+    try {
+      const response = await axios.get(
+        "https://eatit-backend.azurewebsites.net/userinfo"
+      );
+      console.log("유저 정보 가져오기 성공: ", response);
+      localStorage.setItem("nickname", response.data.nickname);
+    } catch (error) {
+      console.error("유저 가져오기 에러 발생: ", error);
+      if (error.response) {
+        // 서버가 오류응답을 반환한 경우
+        console.error("유저 서버 응답: ", error.response.data);
+      }
+    }
+  };
+  setNickname();
   const getCookie = (cookieName) => {
     // 초기값을 null로 설정
     let cookieValue = null;
@@ -159,12 +178,8 @@ localStorage.setItem("nickname", "조영서");
       const cookies = document.cookie.split("; ").reduce((acc, cookieStr) => {
         const [key, value] = cookieStr.split("=");
         acc[key] = decodeURIComponent(value);
-        console.log(
-          console.log(
-            "닉네임: " + document.querySelector("#nickname").innerText
-          )
-        );
-
+        localStorage.setItem("nickname", document.querySelector("#nickname").innerText);
+          console.log(  "닉네임: " + document.querySelector("#nickname").innerText);
         return acc;
       }, {});
 
@@ -174,32 +189,13 @@ localStorage.setItem("nickname", "조영서");
     console;
     return cookieValue;
   };
-
+localStorage.setItem("nickname", "양하연");
   // 로그아웃
-  const onLogout = async () => {
-    try {
-
-      const response = await fetch("https://eatit-backend.azurewebsites.net/token/remove", {
-        headers: { "Content-Type": "application/json" },
-        method: "GET"
-      });
-      const data = await response.json();
-
-      if (data.result) {
-        console.log("로그아웃 성공");
-        alert("정상적으로 로그아웃이 되었습니다.");
-        window.location.reload();
-      } else {
-        console.log("로그아웃 실패");
-      }
-    } catch (error) {
-      console.log("로그아웃 Error:", error);
-    }
-  };
+  
 
   return (
     <>
-      <div onClick={onClick} id="kakao" className={styles.landing}>
+      <div onClick={onKakao} id="kakao" className={styles.landing}>
         <img
           className={styles.icon}
           alt=""
@@ -221,13 +217,6 @@ localStorage.setItem("nickname", "조영서");
       <div
         id="nickname"
         className={`${styles.nickname} ${styles.display_none}`}></div>
-
-      <div
-        onClick={onLogout}
-        id="logout"
-        className={`${styles.logout} ${styles.display_none}`}>
-        <span>로그아웃</span>
-      </div>
 
       <div id="loading" className={`${styles.loading} ${styles.display_none}`}>
         <div className={styles.loading_circle}></div>

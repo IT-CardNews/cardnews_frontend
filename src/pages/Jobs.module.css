@@ -181,7 +181,7 @@
   left: 0;
   background-color: var(--color-white);
   width: 100vw;
-  height: 20vh;
+  height: 150px;
   color: var(--color-royalblue);
   font-family: var(--font-sf-pro-text);
 }

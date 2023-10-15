@@ -82,10 +82,8 @@ const SearchDetail = () => {
 
         
 
-      
     
 
-      {/* 하단바 */}
            {/* -------------하단바------------ */}
 
            <div className={st.menu1homelight}>

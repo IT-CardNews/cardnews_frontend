@@ -6,6 +6,26 @@ import axios from 'axios';
 const MyPage = () => {
   const navigate = useNavigate();
 
+  const onLogout = async () => {
+    try {
+      const response = await fetch("https://eatit-backend.azurewebsites.net/token/remove", {
+        headers: { "Content-Type": "application/json" },
+        method: "GET"
+      });
+      const data = await response.json();
+      if (data.result) {
+        console.log("로그아웃 성공");
+        alert("정상적으로 로그아웃이 되었습니다.");
+        navigate("/");
+        window.location.reload();
+      } else {
+        console.log("로그아웃 실패");
+      }
+    } catch (error) {
+      console.log("로그아웃 Error:", error);
+    }
+  };
+
   const onJobsClick = useCallback(() => {
     navigate("/jobs");
   }, [navigate]);
@@ -112,7 +132,7 @@ const MyPage = () => {
               <img
                 className={styles.iconMessages2}
                 alt=""
-                src="https://itimgstorage.blob.core.windows.net/source/-icon-user.svg"
+                src="https://itimgstorage.blob.core.windows.net/source/-icon-messages-2.svg"
               />
               <div className={styles.community}>Community</div>
             </div>
@@ -149,7 +169,7 @@ const MyPage = () => {
       </div>
       <div className={styles.groupContainer}>
         <div className={styles.parent}>
-          <div className={styles.div3}>이용약관</div>
+          <div onClick={onLogout} className={styles.div3}>로그아웃</div>
           <img
             className={styles.vuesaxoutlinearrowRightIcon}
             alt=""
