@@ -201,7 +201,7 @@ localStorage.setItem("nickname", "양하연");
         <img
           className={styles.groupItem}
           alt=""
-          src="../rectangle-34624985@2x.png"
+          src="https://itimgstorage.blob.core.windows.net/source/rectangle-34624985@2x.png"
         />
       </div>
       <div className={styles.landingChild} />

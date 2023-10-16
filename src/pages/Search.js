@@ -48,7 +48,7 @@ getSearch();
 
   return (
     <div className={styles.search}>
-      <img className={styles.mapbaseIcon} alt="" src="../mapbase-2.svg" />
+      <img className={styles.mapbaseIcon} alt="" src="https://itimgstorage.blob.core.windows.net/source/mapbase-2.svg" />
       <div className={styles.homeBarmini}>
         <div className={styles.homeIndicator} />
       </div>
@@ -64,7 +64,7 @@ getSearch();
       <div className={styles.searchInner} />
      <div className={styles.div}>
      <input 
-      style={{ fontSize: "11px", marginLeft: "5px",paddingLeft: "15px",border: 0, borderRadius: "15px", width:"50vw", height:"20px", outline: "none"}}
+      style={{ fontSize: "11px", marginLeft: "5px",paddingLeft: "15px",border: 0, borderRadius: "15px", width:"50vw", height:"20px", outline: "none", backgroundColor: "transparent", color:"white"}}
       type="text" 
       placeholder="회사, 사람, 키워드로 검색" 
     />
@@ -189,7 +189,6 @@ getSearch();
       </b>
 
       {/* -------------하단바------------ */}
-
       <div className={styles.menu1homelight}>
         <div className={styles.navigationmenuLeftParent}>
           <div className={styles.navigationmenuLeft}>
