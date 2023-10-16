@@ -173,13 +173,13 @@ const MyPage = () => {
           <img
             className={styles.vuesaxoutlinearrowRightIcon}
             alt=""
-            src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinearrowright.svg"
+            src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinearrowright1.svg"
           />
         </div>
         <img
           className={styles.vuesaxoutlinedirectInboxIcon}
           alt=""
-          src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinedirectinbox.svg"
+          src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinedirectinbox1.svg"
         />
       </div>
       <div className={styles.groupDiv}>
@@ -188,13 +188,13 @@ const MyPage = () => {
           <img
             className={styles.vuesaxoutlinearrowRightIcon}
             alt=""
-            src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinearrowright.svg"
+            src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinearrowright2.svg"
           />
         </div>
         <img
           className={styles.vuesaxoutlinedirectInboxIcon}
           alt=""
-          src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlineticketdiscount.svg"
+          src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlineticketdiscount1.svg"
         />
       </div>
       <div className={styles.groupParent1}>
@@ -203,13 +203,13 @@ const MyPage = () => {
           <img
             className={styles.vuesaxoutlinearrowRightIcon}
             alt=""
-            src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinearrowright.svg"
+            src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinearrowright3.svg"
           />
         </div>
         <img
           className={styles.vuesaxoutlinedirectInboxIcon}
           alt=""
-          src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinelovely.svg"
+          src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinelovely1.svg"
         />
       </div>
       <div className={styles.groupParent2}>
@@ -218,13 +218,13 @@ const MyPage = () => {
           <img
             className={styles.vuesaxoutlinearrowRightIcon}
             alt=""
-            src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinearrowright.svg"
+            src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinearrowright4.svg"
           />
         </div>
         <img
           className={styles.vuesaxoutlinedirectInboxIcon}
           alt=""
-          src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinedocumentprevious.svg"
+          src="https://itimgstorage.blob.core.windows.net/source/vuesaxoutlinedocumentprevious1.svg"
         />
       </div>
       <div className={styles.mypageChild} />

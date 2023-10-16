@@ -205,9 +205,9 @@ localStorage.setItem("nickname", "양하연");
         />
       </div>
       <div className={styles.landingChild} />
-      <img className={styles.icon} alt="" src="../--0013-1@2x.png" />
-      <img className={styles.mapBase2Icon} alt="" src="../mapbase-2.svg" />
-      <img className={styles.landingItem} alt="" src="../rectangle-1.svg" />
+      <img className={styles.icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/--0013-1@2x.png" />
+      <img className={styles.mapBase2Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/mapbase-2.svg" />
+      <img className={styles.landingItem} alt="" src="https://itimgstorage.blob.core.windows.net/source/rectangle-1.svg" />
       <b className={styles.b}>카카오로 시작하기</b>
       <div className={styles.eatItItContainer}>
         <p className={styles.eatIt}>EAT IT</p>
