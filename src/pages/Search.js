@@ -48,6 +48,7 @@ getSearch();
 
   return (
     <div className={styles.search}>
+      <img className={styles.mapbaseIcon} alt="" src="../mapbase-2.svg" />
       <div className={styles.homeBarmini}>
         <div className={styles.homeIndicator} />
       </div>
@@ -63,7 +64,7 @@ getSearch();
       <div className={styles.searchInner} />
      <div className={styles.div}>
      <input 
-      style={{ fontSize: "11px", marginLeft: "5px",paddingLeft: "15px",border: 0, borderRadius: "15px", width:"50vw", height:"20px", outline: "none", backgroundColor: "rgb(233, 233, 233)"}}
+      style={{ fontSize: "11px", marginLeft: "5px",paddingLeft: "15px",border: 0, borderRadius: "15px", width:"50vw", height:"20px", outline: "none"}}
       type="text" 
       placeholder="회사, 사람, 키워드로 검색" 
     />
@@ -184,8 +185,7 @@ getSearch();
 
       <img className={styles.searchIcon} src="https://itimgstorage.blob.core.windows.net/source/search-icon.svg" />
       <b className={styles.b}>
-        <p className={styles.p}>다른 사람들이</p>
-        <p className={styles.p}>많이 검색하고 있어요!</p>
+        <p className={styles.p}>다른 사람들이 많이 검색하고 있어요!</p>
       </b>
 
       {/* -------------하단바------------ */}

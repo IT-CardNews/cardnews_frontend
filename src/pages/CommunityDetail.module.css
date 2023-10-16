@@ -20,7 +20,7 @@
   left: 7px;
   font-size: var(--font-size-5xl);
   letter-spacing: -0.28px;
-  color: var(--color-steelblue);
+  color: var(--color-navy);
 }
 .rangeForIn {
   position: absolute;
@@ -206,7 +206,7 @@
 .writerChild {
   left: 0;
   border-radius: var(--br-10xs);
-  background-color: var(--color-steelblue);
+  background-color: var(--color-navy);
   width: 41px;
   height: 14px;
 }

@@ -1,7 +1,7 @@
 .communityTitle {
   font-size: var(--font-size-5xl);
   letter-spacing: -0.28px;
-  color: var(--color-steelblue);
+  color: var(--color-navy);
 }
 .homeIndicator {
   position: absolute;
@@ -328,13 +328,13 @@
   width: 10vw;
   height: 0.1vh;
   line-height: 0.1vh; /* camelCase를 kebab-case로 변경 */
-  color: var(--color-lightsteelblue); /* 작은따옴표 제거 */
+  color: var(--color-navy); /* 작은따옴표 제거 */
   font-weight: bold; /* camelCase를 kebab-case로 변경 */
   text-align: center; /* camelCase를 kebab-case로 변경 */
   justify-content: center; /* camelCase를 kebab-case로 변경 */
   border-radius: 10px; /* camelCase를 kebab-case로 변경 */
-  border-color: #9db2ce; /* camelCase를 kebab-case로 변경 */
-  border: 1.5px solid #9db2ce;
+  border-color: #20007A; /* camelCase를 kebab-case로 변경 */
+  border: 1.5px solid #20007A;
   font-size: 13px; /* camelCase를 kebab-case로 변경 */
 }
 .community {
@@ -367,7 +367,7 @@ h1 {
   padding: 10px;
   margin-bottom: 30px;
   box-sizing: border-box;
-  border: 2px solid #9db2ce;
+  border: 2px solid #20007A;
   border-radius: 5px;
 }
 
@@ -377,7 +377,7 @@ h1 {
   padding: 10px;
   margin-bottom: 20px;
   box-sizing: border-box;
-  border: 2px solid #9db2ce;
+  border: 2px solid #20007A;
   border-radius: 4px;
 }
 .buttonContainer {
@@ -385,7 +385,7 @@ h1 {
 }
 .button, .cancelButton {
   padding: 10px 20px;
-  background-color: #9db2ce;
+  background-color: #20007A;
   border: none;
   border-radius: 4px;
   margin-left: 10px;
@@ -394,7 +394,7 @@ h1 {
 }
 
 .button{
-  background-color: #9db2ce;
+  background-color: #20007A;
 }
 
 .cancelButton {

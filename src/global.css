@@ -54,10 +54,13 @@ body {
   --color-gray-200: rgba(0, 0, 0, 0.5);
   --color-lightgray-100: #d4d4d4;
   --color-lightgray-200: rgba(206, 202, 202, 0.8);
-  --color-navy: #010688;
+  --color-navy: #20007a;
   --color-darkslateblue: #0644a1;
   --color-aliceblue: #ddeaf3;
   --color-slategray: #5b6b84;
+  --color-dodgerblue: #418dff;
+  --color-lavender: #d7e0ef;
+  --color-tomato: #ff3e3e;
 
   /* Gaps */
   --gap-42xl: 61px;

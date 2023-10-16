@@ -7,6 +7,12 @@
   width: 100vw;
   height: 108px;
 }
+
+.span {
+  font-weight: 300;
+  font-family: var(--font-noto-sans-kr);
+}
+
 .p {
   margin: 0;
 }
@@ -184,8 +190,7 @@
 }
 .newsdetail {
   position: relative;
-  background: linear-gradient(180deg, #83a4d4, #b6fbff);
-  width: 100%;
+  background-color: var(--color-navy);
   height: 100vh;
   overflow: hidden;
   text-align: center;

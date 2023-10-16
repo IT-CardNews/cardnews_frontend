@@ -24,7 +24,10 @@ const NewsDetail = () => {
     <div className={styles.newsdetail}>
       <div className={styles.newsdetailChild} />
       <b className={styles.b}>
-        <p className={styles.p}>{`${localStorage.getItem("nickname")}님을 위한 `}</p>
+        <p className={styles.p}>
+          <span className={styles.span}>{`${localStorage.getItem(
+          "nickname"
+        )}`}</span> 님을 위한</p>
         <p className={styles.p}>오늘의 추천 뉴스</p>
       </b>
       <img className={styles.image9Icon} alt="" src="https://itimgstorage.blob.core.windows.net/source/image-9@2x.png" />

@@ -5,7 +5,6 @@
   font-size: var(--font-size-5xl);
   letter-spacing: -0.28px;
   font-family: var(--font-noto-sans-kr);
-  color: var(--color-darkslateblue);
 }
 .iconSettingsOutline {
   position: relative;
@@ -20,8 +19,9 @@
   top: 327px;
   left: 17px;
   border-radius: var(--br-sm);
-  background-color: var(--color-aliceblue);
+  background-color: var(--color-dodgerblue);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  border: 1.3px solid var(--color-white);
   width: 332px;
   height: 45px;
   overflow: hidden;
@@ -32,7 +32,6 @@
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-xl);
-  color: var(--color-slategray);
   font-family: var(--font-abel);
 }
 .iconBookmarkOutline {
@@ -45,8 +44,9 @@
   top: 266px;
   left: 17px;
   border-radius: var(--br-sm);
-  background-color: var(--color-aliceblue);
+  background-color: var(--color-dodgerblue);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  border: 1.3px solid var(--color-white);
   width: 332px;
   height: 45px;
   overflow: hidden;
@@ -57,7 +57,6 @@
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-xl);
-  color: var(--color-slategray);
   font-family: var(--font-abel);
 }
 .avatarsIcon {
@@ -99,7 +98,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  color: #6a6a6a;
+  color: var(--color-lightgray-100);
 }
 .iconBriefcase {
   position: relative;
@@ -260,7 +259,7 @@
 .groupChild {
   top: 34px;
   left: -1px;
-  border-top: 2px solid var(--color-darkslateblue);
+  border-top: 2px solid var(--color-white);
   box-sizing: border-box;
   width: 318px;
   height: 2px;
@@ -336,12 +335,12 @@
 }
 .mypage {
   position: relative;
-  background: linear-gradient(180deg, #83a4d4, #b6fbff);
+  background: var(--color-navy);
   width: 100%;
   height: 100vh;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-lg);
-  color: var(--color-navy);
+  color: var(--color-white);
   font-family: var(--font-roboto);
 }

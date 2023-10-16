@@ -51,9 +51,11 @@ let jobField = "";
   return (
     <div className={styles.jobsdetail}>
       <b className={styles.b}>
-        <p className={styles.p}>{`${localStorage.getItem(
+        <p className={styles.p}>
+          <span className={styles.span}>{`${localStorage.getItem(
           "nickname"
-        )}님을 위한 취업 공고`}</p>
+        )}`}</span> 님을 위한</p>
+        <p className={styles.p}>취업 공고</p>
       </b>
       <div>
       <img

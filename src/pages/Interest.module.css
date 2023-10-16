@@ -100,7 +100,7 @@
   justify-content: flex-start;
   text-align: justify;
   font-size: 11.02px;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color-white);
 }
 .groupChild,
 /* .groupItem {
@@ -250,7 +250,7 @@
 }
 .interest {
   position: relative;
-  background: linear-gradient(180deg, #83a4d4, #b6fbff 92.6%);
+  background: linear-gradient(180deg, #20007a, #20007a 92.6%);
   width: 100%;
   height: 100vh;
   overflow: hidden;

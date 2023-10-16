@@ -196,17 +196,23 @@ localStorage.setItem("nickname", "양하연");
   return (
     <>
       <div onClick={onKakao} id="kakao" className={styles.landing}>
+      <div className={styles.rectangleParent}>
+        <div className={styles.groupChild} />
         <img
-          className={styles.icon}
+          className={styles.groupItem}
           alt=""
-          src="https://itimgstorage.blob.core.windows.net/source/mainlogo.png"
+          src="../rectangle-34624985@2x.png"
         />
-        <img
-          className={styles.landingChild}
-          alt=""
-          src="https://itimgstorage.blob.core.windows.net/source/rectangle-2.svg"
-        />
-        <div className={styles.eatIt}>EAT IT을 카카오로 시작하기</div>
+      </div>
+      <div className={styles.landingChild} />
+      <img className={styles.icon} alt="" src="../--0013-1@2x.png" />
+      <img className={styles.mapBase2Icon} alt="" src="../mapbase-2.svg" />
+      <img className={styles.landingItem} alt="" src="../rectangle-1.svg" />
+      <b className={styles.b}>카카오로 시작하기</b>
+      <div className={styles.eatItItContainer}>
+        <p className={styles.eatIt}>EAT IT</p>
+        <p className={styles.it}>IT를 쉽게 먹다</p>
+      </div>
       </div>
 
       <img

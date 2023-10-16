@@ -1,71 +1,103 @@
-/* Landing.module.css */
-
-
+.groupChild {
+  position: absolute;
+  top: 50.11px;
+  right: -400.89px;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.4), transparent);
+  width: 400.89px;
+  height: 375px;
+  transform: rotate(90deg);
+  transform-origin: 0 0;
+}
+.groupItem,
+.rectangleParent {
+  position: absolute;
+  width: 375px;
+  height: 451px;
+}
+.groupItem {
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.rectangleParent {
+  top: 361px;
+  right: 0;
+}
+.landingChild {
+  position: absolute;
+  top: 174px;
+  left: 63px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  filter: blur(150px);
+  width: 248px;
+  height: 263px;
+}
 .icon {
   position: absolute;
   top: 156px;
-  left: 0;
-  width: 100vw;
-  height: 50vh;
+  left: calc(50% - 187.5px);
+  width: 375px;
+  height: 265px;
   object-fit: cover;
 }
-
-.landingChild {
-  position: absolute;
-  top: 601px;
-  left: 41px;
-  border-radius: var(--br-31xl);
-  width: 304px;
-  height: 50px;
-  cursor: pointer;
+.mapBase2Icon {
+  top: 516px;
+  left: 0;
+  width: 1018px;
+  height: 296px;
+  overflow: hidden;
+  opacity: 0.8;
 }
-
-.eatIt {
+.b,
+.landingItem,
+.mapBase2Icon {
   position: absolute;
+}
+.landingItem {
+  top: 505px;
+  left: 0;
+  border-radius: var(--br-31xl);
+  width: 375px;
+  height: 242px;
+}
+.b {
   top: 608px;
-  left: 85px;
+  left: 98px;
   letter-spacing: -0.28px;
-  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 210px;
+  width: 190px;
   height: 28px;
 }
-
+.eatIt {
+  margin: 0;
+  font-weight: 900;
+}
+.it {
+  margin: 0;
+  font-size: var(--font-size-base);
+}
+.eatItItContainer {
+  position: absolute;
+  top: 428px;
+  left: calc(50% - 45.5px);
+  line-height: 25px;
+  font-size: 28px;
+}
 .landing {
   position: relative;
-  background: linear-gradient(180deg, #83a4d4, #b6fbff 92.6%);
+  background-color: var(--color-navy);
   width: 100%;
-  height: 100vh;
+  height: 812px;
   overflow: hidden;
   text-align: center;
   font-size: var(--font-size-base);
   color: var(--color-white);
-  font-family: var(--font-noto-sans);
+  font-family: var(--font-pretendard);
 }
 
-.kakao_button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  padding: 6px;
-  width: 80%;
-  max-width: 240px;
-  height: 45px;
-  border-radius: 6px;
-  background-color: #FFDE02;
-  color: #000000;
-  cursor: pointer;
-}
-.kakao_button > img {
-  height: 28px;
-}
-.kakao_button > span {
-  margin-left: 6px;
-  line-height: 32px;
-}
 
 .thumnail {
   width: 120px;
