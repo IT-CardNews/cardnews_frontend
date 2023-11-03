@@ -3,16 +3,18 @@
   top: 50.11px;
   right: -400.89px;
   background: linear-gradient(270deg, rgba(0, 0, 0, 0.4), transparent);
-  width: 400.89px;
-  height: 375px;
+  width: 100vw;
+  height: 100vh;
   transform: rotate(90deg);
   transform-origin: 0 0;
 }
-.groupItem,
+.groupItem {
+  width: 100vw;
+}
 .rectangleParent {
   position: absolute;
-  width: 375px;
-  height: 451px;
+  width: 100vw;
+  height: 100vh;
 }
 .groupItem {
   top: 0;

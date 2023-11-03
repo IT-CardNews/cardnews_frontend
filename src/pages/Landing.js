@@ -2,6 +2,7 @@ import React, { useCallback, useEffect } from "react";
 import axios from "axios";
 import styles from "./Landing.module.css";
 import { useNavigate } from "react-router-dom";
+import summarizeText from "../img/summarizeText";
 
 const Landing = () => {
   const navigate = useNavigate();
@@ -192,6 +193,7 @@ localStorage.setItem("nickname", "양하연");
 localStorage.setItem("nickname", "양하연");
   // 로그아웃
   
+
 
   return (
     <>

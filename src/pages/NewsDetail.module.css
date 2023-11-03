@@ -190,7 +190,7 @@
 }
 .newsdetail {
   position: relative;
-  background-color: var(--color-navy);
+  background-color: var(--color-blueviolet);
   height: 100vh;
   overflow: hidden;
   text-align: center;
