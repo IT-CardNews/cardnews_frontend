@@ -14,7 +14,7 @@
 .rectangleParent {
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 .groupItem {
   top: 0;
@@ -46,7 +46,7 @@
 .mapBase2Icon {
   top: 516px;
   left: 0;
-  width: 1018px;
+  width: 100;
   height: 296px;
   overflow: hidden;
   opacity: 0.8;
@@ -92,7 +92,7 @@
   position: relative;
   background-color: var(--color-navy);
   width: 100%;
-  height: 812px;
+  height: 900px;
   overflow: hidden;
   text-align: center;
   font-size: var(--font-size-base);
@@ -113,7 +113,7 @@
   margin: 20px 0 40px 0;
 }
 
-.logout {
+/* .logout {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,5 +126,5 @@
   background-color: #0ebb8d;
   color: #000000;
   cursor: pointer;
-}
+} */
 

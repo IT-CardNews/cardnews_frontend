@@ -1,7 +1,7 @@
 
 import OpenAI from "openai";
 
-const apiKey = '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';
+const apiKey = REACT_APP_OPENAI_API_KEY;
 const openai = new  OpenAI({
   apiKey, dangerouslyAllowBrowser: true
 });
@@ -12,7 +12,7 @@ export default async function imgCreate(title, news) {
     const response = await openai.images.generate({
       prompt: `news picture of ${title}.`,
       n: 5,
-      size: "256x256",
+      size: "512x512",
     });
     console.log("이미지 생성 성공: ", response.data);
 

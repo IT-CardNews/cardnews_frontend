@@ -173,8 +173,6 @@
   object-fit: cover;
 }
 .cardnews {
-  display: flex;
-  align-items: center; /* 수평 중앙 정렬 */
   object-fit: cover;
   height: 50vh;
   width: 100vw;
@@ -184,6 +182,8 @@
   word-break: normal;
   width: 100vw;
   font-size: 20px;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
 }
 
 
@@ -248,19 +248,24 @@
 .frameChild6 {
   left: 1778px;
 }
+
+/* 부모 */
 .cardnewsParent {
   top: 160px;
   left: 0;
   width: 150vw;
   overflow-x: auto;
+  overflow-y: unset;
   height: 50vh ;
+  display: flex;
+  flex-direction: row;
 }
 
 .boldText {
   font-weight: bold;
 }
 .news {
-  position: relative;
+  position: fixed;
   background: var(--color-navy);
   width: 100%;
   height: 100vh;

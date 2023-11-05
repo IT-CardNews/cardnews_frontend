@@ -35,9 +35,8 @@ const Landing = () => {
 
   // 카카오 OAuth
   const onKakao = async () => {
-localStorage.setItem("nickname", "양하연");
-
     try {
+      console.log("카카오 로그인 시작");
       const response = await axios.get('https://eatit-backend.azurewebsites.net/oauth/url');
       const url = response.data.kakao_oauth_url;
       const newWindow = openWindowPopup(url, "카카오톡 로그인");
@@ -46,11 +45,10 @@ localStorage.setItem("nickname", "양하연");
         clearInterval(checkConnect);
         console.log(response.data);
         localStorage.setItem("nickname", response.data.nickname); // 로컬스토리지에 저장
-
         /////////////////////////// 로그인 성공 시, 로직 ///////////////////////////
         if (getCookie) {
           newWindow.close();
-          window.location.href = "/jobs";
+          window.location.href = "/News";
         } else {
           document.querySelector("#loading").classList.add("display_none");
         }
@@ -190,7 +188,7 @@ localStorage.setItem("nickname", "양하연");
     console;
     return cookieValue;
   };
-localStorage.setItem("nickname", "양하연");
+// localStorage.setItem("nickname", "양하연");
   // 로그아웃
   
 

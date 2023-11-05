@@ -1,7 +1,7 @@
 import OpenAI from "openai";
 import imgCreate from "./createImg";
 
-const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
+const apiKey = REACT_APP_OPENAI_API_KEY;
 const openai = new OpenAI({
   apiKey,
   dangerouslyAllowBrowser: true,
